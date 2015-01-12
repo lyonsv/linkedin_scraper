@@ -10,6 +10,9 @@
 # http://github.com/RailsApps/rails-composer/issues
 #----------------------------------------------------------------------------
 
+# custom artifacts 
+/config/secrets.yml
+
 # bundler state
 /.bundle
 /vendor/bundle/

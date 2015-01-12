@@ -188,6 +188,14 @@ GEM
       shellany (~> 0.0)
     ntlm-http (0.1.1)
     oauth (0.4.7)
+    omniauth (1.2.2)
+      hashie (>= 1.2, < 4)
+      rack (~> 1.0)
+    omniauth-linkedin (0.2.0)
+      omniauth-oauth (~> 1.0)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
     orm_adapter (0.5.0)
     pg (0.18.1)
     pry (0.10.1)
@@ -356,6 +364,8 @@ DEPENDENCIES
   launchy
   linkedin
   linkedin-scraper
+  omniauth
+  omniauth-linkedin
   pg
   quiet_assets
   rails (= 4.2.0)
