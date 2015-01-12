@@ -72,6 +72,11 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     columnize (0.9.0)
+    countries (0.9.3)
+      currencies (~> 0.4.2)
+    country_select (2.1.0)
+      countries (~> 0.9, >= 0.9.3)
+    currencies (0.4.2)
     daemons (1.1.9)
     database_cleaner (1.4.0)
     debug_inspector (0.0.2)
@@ -356,6 +361,7 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.1.0)
+  country_select
   database_cleaner
   devise
   factory_girl_rails

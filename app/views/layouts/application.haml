@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title LinkedinScraper
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %section.l-section.company-section.m5{style: "padding:5%"}
+      = yield

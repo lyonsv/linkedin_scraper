@@ -1,18 +1,19 @@
-= simple_form_for(@contact) do |f|
-  = f.error_notification
+.l-form.l-form-small
+  = simple_form_for(@contact) do |f|
+    = f.error_notification
 
-  .form-inputs
-    = f.input :name
-    = f.input :notes
-    = f.input :headline
-    = f.input :first_name
-    = f.input :last_name
-    = f.input :title
-    = f.input :summary
-    = f.input :location
-    = f.input :country
-    = f.input :industry
-    = f.input :picture_url
+    .form-inputs
+      = f.input :name
+      = f.input :notes
+      = f.input :headline
+      = f.input :first_name
+      = f.input :last_name
+      = f.input :title
+      = f.input :summary
+      = f.input :location
+      = f.input :country, as: :country
+      = f.input :industry
+      = f.input :picture_url
 
-  .form-actions
-    = f.button :submit
+    .form-actions
+      = f.button :submit, class: "btn-mini btn-solid btn-accent"
