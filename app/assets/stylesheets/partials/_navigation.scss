@@ -1,0 +1,42 @@
+nav{
+ background:rgba(13, 13, 13, 0.77);
+ position:absolute;
+ width:100%;
+ img{
+  max-width:200px;
+  margin-top:13px;
+ }
+ ul{
+  display:inline-block;
+  text-align:right;
+  float:right;
+  list-style-type:none;
+ }
+ li{
+ display:inline;
+ padding:15px;
+ }
+ li a{
+  color:white;
+ }
+ .back{
+  display:inline-block;
+  vertical-align:middle;
+ @include breakpoint(medium){
+    display:none;
+  }  
+ }
+}
+
+.mobile-menu-2{
+  display:none;
+  @include breakpoint(medium){
+    display:block;
+  }  
+}
+
+.mobile-menu-1{
+  @include breakpoint(medium){
+    display:none;
+  }  
+}

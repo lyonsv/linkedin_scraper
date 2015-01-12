@@ -1,0 +1,85 @@
+// 
+// Resets from Normalize, Framework from http://bourbon.io, Grids from http://neat.bourbon.io, 
+// and SASS scaffold from http://bitters.bourbon.io
+//
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import "reset";
+@import "bourbon";
+@import "neat";
+//
+//Mixins
+//
+@import "base/mixins/vertical_align";
+@import "base/mixins/breakpoints";
+
+// 
+//Files are to be organised by SMACSS, base/ files provided by Bitters Gem.
+//
+@import "base/variables";
+@import "base/grid-settings";
+@import "base/typography";
+@import "base/forms";
+@import "base/buttons";
+@import "base/social-button";
+@import "base/jquery.remodal";
+//
+//Layout files
+//
+@import "layout/layout";
+@import "layout/dubstarts-forms";
+
+
+//
+// Sections
+//
+
+@import "partials/white-section";
+@import "partials/dark-section";
+@import "partials/accent-section";
+@import "partials/dubstarts-hero";
+@import "partials/about-dubstarts";
+@import "partials/footer";
+@import "partials/company";
+@import "partials/navigation";
+@import "partials/jobs";
+@import "partials/user";
+@import "partials/signup";
+@import "partials/company-index";
+@import "partials/dashboard";
+@import "partials/slide_up_menu";
+@import "partials/jobs-index";
+
+
+
+//
+//Modal Window
+//
+@import "partials/modal";
+@import "partials/scroller";
+@import "partials/dropdown"; // taken from thoughbot refills
+@import "partials/tabs-refills"; // taken from thoughbot refills
+
+
+
+body{
+  padding-bottom:5em;
+}
+
+.tag{
+display:inline-block;
+color:white;
+padding:0.3em 1em;
+font-size:0.8em;
+border-radius:2px;
+}
+
+.bar {
+    height: 18px;
+    background: $blue;
+}
+
+fieldset#resume{
+input[type=file]{
+  color:transparent;
+}
+}

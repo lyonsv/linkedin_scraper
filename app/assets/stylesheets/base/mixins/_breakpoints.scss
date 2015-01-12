@@ -1,0 +1,19 @@
+// Responsive breakpoints
+@mixin breakpoint($point) {
+
+  @if $point == mini {
+    @media (max-width: 679px) { @content; }
+  }
+  @if $point == small {
+    @media (max-width: 680px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 1120px)  { @content; }
+  }
+  @else if $point == large {
+    @media (max-width: 1820px)  { @content; }
+  }
+  @else if $point == exception {
+    @media (min-width: 800px)  { @content; }
+  } 
+}

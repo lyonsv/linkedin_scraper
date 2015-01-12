@@ -1,0 +1,105 @@
+.signup-form-left{
+  @include span-columns(6);
+  @include pad(2em);
+  text-align:center;
+  border-right:1px solid;
+  border-color:rgba(128, 128, 128, 0.13);
+  .btn-ln{
+    width:100%;
+    padding:2em;
+  }
+ section{
+   padding:1em 0;
+  width:90%; 
+   p{
+    vertical-align:middle;
+  @include span-columns(10);
+   }
+  img{
+  @include span-columns(2);    
+    vertical-align:middle;
+    display:inline-block; 
+  }
+
+
+}
+
+    @include breakpoint(small){
+    @include span-columns(12);
+
+  }
+}
+
+.signup-form-right{
+  @include span-columns(6);
+  @include pad(2em);
+  
+  display:block;
+  .point{
+    padding-bottom:20%;
+  img{
+    width:33%;
+    display:inline-block;
+    vertical-align:middle;  
+  }
+  p{
+    display:inline-block;
+    width:65%;
+    vertical-align:middle;
+    text-align:left;  
+    
+  }
+  }
+  .rtl{
+    direction:rtl;
+  }
+  @include breakpoint(small){
+    @include span-columns(12);
+
+  }
+}
+
+.hint{
+    color: $dubstarts-pink;   
+}
+
+.user-form-container{
+  @include pad(0);
+  max-width:60em;
+  p{
+    margin:2em 0;
+  }
+  h1{
+  font-size:4em;
+  text-transform:uppercase;
+  
+  }
+  fieldset{
+    text-align:left;
+  }
+}
+
+.toc{
+  font-size:0.8em;
+}
+
+.or{
+  margin:2em;
+  font-size:1em;
+  text-align:center;
+}
+
+  .blur{
+//-webkit-transition:ease 0.5s;  
+//    -webkit-filter:blur(2px);
+  }
+  .blur:hover{
+//-webkit-transition:ease 0.5s;
+//-webkit-filter:blur(0);
+  }
+
+  .startup-signup{
+  text-align:center;
+  padding:2%;
+  }
+

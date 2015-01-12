@@ -1,0 +1,63 @@
+.modal{
+  //border-radius:none;
+  background:white;
+  text-align:center;
+  padding:2em;
+  p{
+  }
+  h1{
+  }
+  input{
+    margin:2% 2%;
+    width:200px;
+  }
+  footer{
+    height:100%;
+    background:white;
+  }
+  ol{
+    display:inline-block;
+  }
+
+  button{
+    display:block;
+    color:white;
+    border:1px solid white;
+  }
+  i{
+    font-size:2em;
+    vertical-align:middle;
+    margin-top:-5px;
+    margin-right:0.5em;
+  }
+  ul{
+    max-width:600px;
+    margin:5% auto;
+    padding:0;
+  }
+  li{
+    list-style-type:none;
+    display:inline;
+    font-size:1em;
+  }
+  .l-header{
+    padding:1em 0;
+  }
+
+  .l-section{
+    margin-top:0;
+  }
+  p{
+  display:block;
+  line-height:1.5em;
+  }
+
+}
+
+.remodal-close{
+ display:none;
+}
+
+.remodal{
+  background:white
+}

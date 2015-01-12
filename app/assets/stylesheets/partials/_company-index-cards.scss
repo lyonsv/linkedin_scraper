@@ -1,0 +1,41 @@
+.companies-index-section{
+  text-align:center;
+  h3, p{
+    color: $base-font-color;
+  }
+  }
+.companies-list-container{
+  @include outer-container;
+  background:$white;
+  @include breakpoint(medium){
+    padding:2%;
+  }
+}
+
+.company-list-item{
+  @include span-columns(4);
+  @include omega(3n);
+  @include breakpoint(medium){
+    @include span-columns(6);
+    @include omega(2n);    
+  }
+  @include breakpoint(small){
+    @include span-columns(12);
+    @include omega(0);    
+  }
+  .images{
+    padding:5%;
+  }
+  .description{
+    padding:5%;
+  }
+  .tag{
+    margin:5px 0;
+  }
+  
+  .btn-big{
+    margin-top:20px;
+    display:block;
+  }
+}
+

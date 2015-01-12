@@ -1,0 +1,73 @@
+.l-form-large{
+  @include outer-container;
+}
+.l-form-medium{
+  @include outer-container;
+  max-width:60em;
+  .short{
+    width:27.78%;
+    display:inline-block;
+  }
+  .short-input{
+  display:inline-block;
+  width:75%;
+  }
+}
+
+.l-form-small{
+  @include outer-container;
+  max-width:50em;
+    .short{
+    width:47.78%;
+    display:inline-block;
+  }
+  .short-input{
+  display:inline-block;
+  width:75%;
+  }
+
+}
+
+.l-form-mini{
+  @include outer-container;
+  max-width:30em;
+    .short{
+    width:27.78%;
+    display:inline-block;
+  }
+  .short-input{
+  display:inline-block;
+  width:75%;
+  }
+}
+
+.l-form-container{
+  border-radius:3px;
+  border:1px solid;
+  border-color:#e5e6e9 #dfe0e4 #d0d1d5;
+  background:$white; 
+  h1{
+    text-align:center;
+  }
+}
+
+.l-form{
+  display:block;
+  @include pad(5%);
+
+  i{
+  color:$blue;
+  font-size:2em;
+  width:35px;
+  vertical-align:middle;
+  text-align:center;
+  display:inline-block;
+  }
+  fieldset{
+    border:1px solid rgba(124, 123, 123, 0.03);
+    padding:1em;
+    text-align:left;
+  }
+}
+
+

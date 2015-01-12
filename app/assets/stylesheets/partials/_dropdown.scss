@@ -1,0 +1,76 @@
+$large-screen: 800px;
+.dropdown {
+  text-align: right;
+  display:inline-block;
+}
+
+.dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+
+
+.dropdown-button {
+  cursor: pointer;
+}
+
+.dropdown-button:hover{
+}
+
+
+.menu {
+  @include transition (all 0.2s ease-in-out);
+  border-radius: $base-border-radius;
+  border: $dropdown-border;
+  box-shadow: 0 2px 2px transparentize(black, .8);
+  color: $dropdown-color;
+  cursor: pointer;
+  display: none;
+  overflow: show;
+  position: absolute;
+  right: 0;
+  top: $dropdown-distance-from-menu;
+  z-index: 99999;
+  padding:0;
+
+  &:before {
+    @include position(absolute, 0 1em 0 0);
+    color: $dropdown-background;
+    content: "\25b2";
+    font-size: 1.4em;
+    pointer-events: none;
+    text-shadow: 0 -2px 2px transparentize(black, .7);
+    top: -1em;
+  }
+}
+
+.menu li {
+  color: $dropdown-color; 
+  padding: $dropdown-padding / 2;
+}
+
+
+
+.menu li:first-child {
+  border-top-left-radius: $base-border-radius;
+  border-top-right-radius: $base-border-radius;
+}
+
+.menu li:last-child {
+  border: none;
+  border-bottom-left-radius: $base-border-radius;
+  border-bottom-right-radius: $base-border-radius;
+}
+
+.show-menu {
+  text-align:center;
+  display: block;
+  background:white;
+  ul{
+  padding:0;
+  }
+  min-width:150px;
+}
+
+// Inspired by code by www.HUSAMUI.com
+

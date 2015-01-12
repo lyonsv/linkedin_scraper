@@ -1,0 +1,128 @@
+.jobs-section{
+  @include pad(5%);
+  text-align:left;
+}
+
+.create-new-job{
+  width:100%;
+  height:100px;
+  position:relative;
+  button{
+    float:right;
+    margin-bottom:25px;
+  }
+  display:block;
+}
+
+.jobs-list-container{
+  display:block;
+   section{
+ border-bottom:1px rgb(239, 230, 230) solid;
+ margin-bottom:2%;
+ @include pad(2%);
+ } 
+}
+
+.full{
+  height:100% !important;
+}
+
+.read-more {
+	position: absolute; 
+	bottom: 0; left: 0;
+	width: 100%; 
+	text-align: left; 
+	margin: 0;   
+  p{
+  background:white; 
+  padding:0;
+  margin:0;
+    
+  }
+}
+.border{
+  @include background-image(linear-gradient(transparent, white)); 
+	width: 100%; 
+  height:50px; 
+}
+
+
+.or-share{
+  margin:2em;
+}
+
+.edit-buttons{
+  text-align:right;
+  display:inline-block;
+   @include breakpoint(small){
+    @include span-columns(12);
+    .btn-big{
+      width:100%;
+      text-align:center;
+    }
+  }
+}
+
+.job-description{
+  @include span-columns(9);
+  overflow:hidden; 
+  min-height:300px;
+  display:inline-block;
+  vertical-align:middle;
+     @include breakpoint(small){
+    @include span-columns(12);
+  }
+  .tag{
+  margin:10px 0;
+  }
+}
+.job-list-item{
+  @include outer-container;
+}
+
+#panel{
+height:200px;
+}
+
+.jobs-container-show{
+  @include outer-container;
+  text-align:left;
+  margin-top:-123px;
+  max-width:74.25em;
+  padding:0 2em;
+  h3{
+  font-weight:100;
+  margin-bottom:1em;
+  }
+}
+
+.left-jobs{
+  @include span-columns(9);
+    text-align:left;
+    font-family: "Raleway"
+}
+
+.right-jobs{
+  @include span-columns(3);
+  padding:5% 0;
+    text-align:left;
+        font-family: "Raleway"
+
+}
+
+.circle-logo-jobs{
+  img{
+  width:113px;
+  background:white;
+  border-radius:1000px;
+  display:block;
+  margin:0 auto;
+  box-shadow:1px 2px rgba(129, 126, 126, 0.74);
+  }
+}
+
+.copy-to-clipboard{
+  input{
+    min-width:100%;
+  }
+}

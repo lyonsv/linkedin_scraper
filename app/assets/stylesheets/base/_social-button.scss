@@ -1,0 +1,71 @@
+.btn-tw{
+  margin-top:1em;
+   text-align:center;
+  width:100%;
+  padding:2em;
+  background: $twitter-blue;
+  color:white; 
+-webkit-transition:ease 0.3s;  
+.fa-twitter{
+  font-size:1.5em;
+  line-height:0;
+  color:white;
+  }
+
+}
+
+.btn-fb{
+  text-align:center;
+  width:49%;
+  padding:2em;
+  background: $facebook-blue;
+  color:white; 
+-webkit-transition:ease 0.3s;  
+.fa-facebook{
+  font-size:1.5em;
+  line-height:0;
+  color:white;
+  }
+}
+.btn-ln{
+  text-align:center;
+  width:49%;
+  padding:2em;
+  background: $linkedin-blue;
+  color:white; 
+-webkit-transition:ease 0.3s;  
+.fa-linkedin{
+  font-size:1.5em;
+  line-height:0;
+  color:white;
+  }
+}
+
+.btn-ln:hover{
+  color:white;
+ -webkit-transform:scale(1.03); 
+ -webkit-transition:ease 0.3s  }
+ .btn-tw:hover{
+  color:white;
+ -webkit-transform:scale(1.03); 
+ -webkit-transition:ease 0.3s  }
+
+  .btn-fb:hover{
+  color:white;
+ -webkit-transform:scale(1.03); 
+ -webkit-transition:ease 0.3s  }
+
+.btn-fb{
+  background: $facebook-blue;
+}
+
+
+.btn-share-large{
+  width:100%;  
+}
+
+.btn-share-short{
+  width:49%;
+  margin-top:2%;
+
+}

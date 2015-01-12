@@ -1,0 +1,12 @@
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+#main_content_wrapper{
+  width:1100px !important;
+  overflow:scroll !important;
+}
+
+#sidebar{
+  width:25%;
+  float:right !important;
+}

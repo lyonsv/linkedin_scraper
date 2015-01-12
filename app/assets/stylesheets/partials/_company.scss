@@ -1,0 +1,70 @@
+.company-section{
+  padding:0;
+  background:$white;
+  ul{
+    list-style-type:none;
+    padding:0;
+    font-size:2em;
+    text-align:center;
+  }
+  li{
+    display:inline;
+  }
+  margin-bottom:5%;
+}
+
+
+
+.company-hero{
+  @include pad(5% 1em);
+  // min-height: 800px;
+  //@include linear-gradient(white,black);
+  background:-webkit-linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.99)), url("../images/sea-background.jpg"), center no-repeat;
+  background-size:cover;
+  color:white;
+  text-align:center;
+  .circle-logo img{
+    display:block;
+    width:150px;
+    margin:0 auto;
+  }
+  button{    
+    margin: 2% auto;
+  }
+  h1{
+    margin:2% auto;
+  }
+}
+
+.company-description-body{
+  @include span-columns(9);
+  @include pad(2em);
+  text-align:left;
+  @include breakpoint(small){
+    width:100%;
+  }
+
+}
+
+aside{
+ @include span-columns(3);
+ @include omega();
+ @include pad(2em);
+   @include breakpoint(small){
+    width:100%;
+    padding-top:0;
+    .btn-big{
+      width:100%;
+      text-align:center;
+    }
+  }
+   
+}
+
+.company-description{
+  @include outer-container;
+}
+
+.no_jobs{
+  text-align:center;
+}

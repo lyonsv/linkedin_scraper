@@ -1,0 +1,10 @@
+@mixin vertical-align-parent{
+  /* The vertical alignment magic */
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%; /* Needs width for inline-block */
+  /* Fix for IE <= 7 */
+  *display: inline;
+  *zoom:1;
+  *width: 16.6%;
+} 

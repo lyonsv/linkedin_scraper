@@ -1,0 +1,31 @@
+%section.startup-signup
+%section.l-form-container.l-form-small
+  .l-header-bg
+    %header
+      %h1 Sign up
+  %section.l-form
+    .signup-form-left
+      - if devise_mapping.omniauthable?
+        - resource_class.omniauth_providers.each do |provider|
+          = link_to omniauth_authorize_path(resource_name, provider, user_type: params[:user_type].to_s ), class: "btn-big btn-ln btn-solid" do
+            .fa.fa-linkedin
+            Sign Up with  #{provider.to_s.titleize}
+      %section
+      %br/
+      .blur      
+        .or
+          %b Or
+          %p Get a free ticket by signing up for an account with email.
+      
+        = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          = f.error_notification
+          %fieldset.form-inputs
+            = f.hidden_field :user_type, :value => params[:user_type].to_s
+            = f.input :email, required: true, autofocus: true
+            = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable)
+            = f.input :remember_me, as: :boolean if devise_mapping.rememberable?       
+          %fieldset.form-actions
+            = f.submit "Sign up", class: "btn-solid btn-big btn-accent"
+            = link_to "Back", :back
+    .signup-form-right
+

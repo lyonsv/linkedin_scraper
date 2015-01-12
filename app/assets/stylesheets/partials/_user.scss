@@ -1,0 +1,49 @@
+.user_background{
+  background:url("images/background.jpg");
+  background-size:cover;
+}
+
+.profile-header{
+    display:inline-block;
+    background:rgba(255, 255, 255, 0.96);
+    border:white 2px solid;
+    border-radius:5px;
+    margin: 0 auto;
+    padding: 2em;
+ 
+  .circle-logo{
+    display:inline-block;
+  
+  }
+  .profile-description{
+    display:inline-block;
+    text-align:left;
+    vertical-align:middle;
+    padding:1em;
+  }
+  h3{
+    margin-bottom: 10px;  
+  }
+  p{
+    margin:0;
+  }
+}
+
+.resume-section{
+  text-align:left;
+  background:white;
+}
+.position{
+  @include pad(1em 0);
+}
+.date{
+  margin:0;
+  font-style:italics;
+  color:rgb(139, 139, 139);
+}
+
+.tags{
+  padding:1em 0;  
+}
+
+

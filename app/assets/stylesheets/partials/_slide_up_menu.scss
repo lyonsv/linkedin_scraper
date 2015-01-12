@@ -1,0 +1,15 @@
+
+#bottom-bar{
+  background:white;
+	z-index: 100;
+	    .fixed{
+	position: fixed;
+	top: 0px;}
+}
+
+.dn{
+	display: none;}
+  .bottom-fixed{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;}

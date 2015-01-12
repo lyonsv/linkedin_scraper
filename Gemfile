@@ -22,6 +22,8 @@ gem 'sendgrid'
 gem 'simple_form'
 gem 'omniauth'
 gem 'omniauth-linkedin'
+gem 'bourbon'
+gem 'neat'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

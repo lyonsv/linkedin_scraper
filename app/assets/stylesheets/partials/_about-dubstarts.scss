@@ -1,0 +1,49 @@
+.about-dubstarts{
+  @include pad(0);
+  img{
+    width:25%;
+    @include breakpoint(medium){
+      margin:5% auto;
+      display:block;
+    }
+  }
+  header{
+    h1{
+      font-size:5em;
+      color:white;
+      text-transform:uppercase;
+      @include breakpoint(medium){
+        font-size:2em;
+      }
+    }
+  }
+  .point div{
+    @include vertical-align-parent;
+    @include pad(0 5%);
+    max-width:63%;
+    text-align:left;
+    @include breakpoint(medium){
+    @include pad(0);
+    max-width:100%;
+    p, h3{
+     text-align:center;
+    }
+    section{
+      background:$dark-gray;
+      color:$white;
+      padding:5%;
+      }
+    }
+  }
+  .point{
+    @include breakpoint(medium){
+    padding:0;
+    margin:0;
+  }
+  }
+  footer{
+
+  }
+}
+
+
