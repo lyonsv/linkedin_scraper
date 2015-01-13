@@ -4,7 +4,8 @@ class ContactsController < ApplicationController
   respond_to :html
 
   def index
-    @contacts = Contact.all.paginate(:page => params[:page], :per_page => 10).order(created_at: :desc)
+    @contacts_search = Contact.search(params[:q])
+    @contacts = @contacts_search.result.includes(:skills, :educations, :companies).paginate(:page => params[:page], :per_page => 10).order(created_at: :desc)
     respond_to do |format|
       format.html
       format.csv { render text: @contacts.to_csv }

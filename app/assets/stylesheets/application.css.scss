@@ -87,17 +87,27 @@ input[type=file]{
 }
 
 .contacts_container{
-  @include pad(3em 2em);   
+  @include pad(3em 1em);   
   overflow:scroll;
   text-align: left;
   section{
   @include outer-container;
-  @include pad(2em); 
+  }
+  .l-form{
+  padding:0;
+  margin:0;
   }
   h1{
     padding-bottom:1em;
     text-align:center;
     font-weight:100;
+  }
+  #contacts{
+  @include span-columns(8)
+  }
+  aside{
+  @include span-columns(3);
+  padding-top:0;
   }
   img{
     @include span-columns(1); 
