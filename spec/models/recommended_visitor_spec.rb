@@ -1,26 +1,19 @@
 # == Schema Information
 #
-# Table name: contacts
+# Table name: recommended_visitors
 #
 #  id           :integer          not null, primary key
+#  linkedin_url :string
 #  name         :string
-#  notes        :text
-#  headline     :string
-#  first_name   :string
-#  last_name    :string
 #  title        :string
-#  summary      :text
-#  location     :string
-#  country      :string
-#  industry     :string
-#  picture_url  :string
+#  company      :string
+#  contact_id   :integer
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
-#  linkedin_url :string
 #
 
 require 'rails_helper'
 
-RSpec.describe Contact, :type => :model do
+RSpec.describe RecommendedVisitor, :type => :model do
   pending "add some examples to (or delete) #{__FILE__}"
 end

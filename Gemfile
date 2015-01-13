@@ -24,6 +24,7 @@ gem 'omniauth'
 gem 'omniauth-linkedin'
 gem 'bourbon'
 gem 'neat'
+gem 'annotate'
 gem 'country_select'
 group :development do
   gem 'better_errors'

@@ -1,0 +1,11 @@
+= simple_form_for(@education) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :description
+    = f.input :period
+    = f.association :contact
+
+  .form-actions
+    = f.button :submit

@@ -11,10 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150112214312) do
+ActiveRecord::Schema.define(version: 20150113004329) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "companies", force: :cascade do |t|
+    t.string   "title"
+    t.string   "name"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.string   "linkedin_company_url"
+    t.string   "website"
+    t.string   "industry"
+    t.string   "type"
+    t.string   "headquarters"
+    t.string   "company_size"
+    t.string   "founded"
+    t.string   "address"
+    t.integer  "contact_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.boolean  "current_company"
+  end
+
+  add_index "companies", ["contact_id"], name: "index_companies_on_contact_id", using: :btree
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
@@ -28,9 +49,42 @@ ActiveRecord::Schema.define(version: 20150112214312) do
     t.string   "country"
     t.string   "industry"
     t.string   "picture_url"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "linkedin_url"
+  end
+
+  create_table "educations", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "period"
+    t.integer  "contact_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  add_index "educations", ["contact_id"], name: "index_educations_on_contact_id", using: :btree
+
+  create_table "recommended_visitors", force: :cascade do |t|
+    t.string   "linkedin_url"
+    t.string   "name"
+    t.string   "title"
+    t.string   "company"
+    t.integer  "contact_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "recommended_visitors", ["contact_id"], name: "index_recommended_visitors_on_contact_id", using: :btree
+
+  create_table "skills", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "contact_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "skills", ["contact_id"], name: "index_skills_on_contact_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -58,4 +112,8 @@ ActiveRecord::Schema.define(version: 20150112214312) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "companies", "contacts"
+  add_foreign_key "educations", "contacts"
+  add_foreign_key "recommended_visitors", "contacts"
+  add_foreign_key "skills", "contacts"
 end

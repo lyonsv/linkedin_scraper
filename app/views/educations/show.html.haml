@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @education.name
+%p
+  %b Description:
+  = @education.description
+%p
+  %b Period:
+  = @education.period
+%p
+  %b Contact:
+  = @education.contact
+
+= link_to 'Edit', edit_education_path(@education)
+\|
+= link_to 'Back', educations_path
