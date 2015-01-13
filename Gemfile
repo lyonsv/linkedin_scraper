@@ -27,6 +27,7 @@ gem 'neat'
 gem 'annotate'
 gem 'country_select'
 gem 'will_paginate'
+gem 'ransack'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
