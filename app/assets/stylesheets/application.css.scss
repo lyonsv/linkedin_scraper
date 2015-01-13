@@ -92,7 +92,7 @@ input[type=file]{
   text-align: left;
   section{
   @include outer-container;
-  @include pad(2em) 
+  @include pad(2em); 
   }
   h1{
     padding-bottom:1em;
@@ -116,5 +116,20 @@ input[type=file]{
   }
   a{
   color:$base-font-color;
+  }
+}
+
+.contact-profile{
+  @include pad(3em 2em);   
+  overflow:scroll;
+  text-align: left;
+  section{
+    @include outer-container;
+    @include pad(2em);
+  }
+  img{
+    max-width:150px;
+    border-radius:1000px;
+    box-shadow:2px 2px #efefef;
   }
 }

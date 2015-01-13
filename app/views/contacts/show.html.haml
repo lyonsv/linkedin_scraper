@@ -1,87 +1,78 @@
-%p#notice= notice
-
-%p
-  %b Name:
-  = @contact.name
-%p
-  %b Notes:
-  = @contact.notes
-%p
-  %b Headline:
-  = @contact.headline
-%p
-  %b First name:
-  = @contact.first_name
-%p
-  %b Last name:
-  = @contact.last_name
-%p
-  %b Title:
-  = @contact.title
-%p
-  %b Summary:
-  = @contact.summary
-%p
-  %b Location:
-  = @contact.location
-%p
-  %b Country:
-  = @contact.country
-%p
-  %b Industry:
-  = @contact.industry
-%p
-  %b Picture url:
+.contact-profile
   .circle-profile
-    = image_tag @contact.picture_url, style: "border-radius:1000px"
+    = image_tag @contact.picture_url
+  
+  %h1= @contact.name
+  %h2= @contact.headline + "|" + @contact.title
+  %p
+    %b First name:
+    = @contact.first_name
+  %p
+    %b Last name:
+    = @contact.last_name
+  %p
+    %b Title:
+    = @contact.title
+  %p
+    %b Summary:
+    = @contact.summary
+  %p
+    %b Location:
+    = @contact.location
+  %p
+    %b Country:
+    = @contact.country
+  %p
+    %b Industry:
+    = @contact.industry
 
-%p 
-  - @contact.skills.each do |skill|
-    = skill.name
-%p 
-  - @contact.educations.each do |education|
-    = education.name
-    = education.description
-    = education.period
-%p 
-  - @contact.recommended_visitors.each do |recommended|
-    = recommended.linkedin_url
-    = recommended.name
-    = recommended.title
-    = recommended.company
-    = recommended.contact_id
-%p 
-  %b Past Companies
-  - @contact.companies.where(:current_company => false).each do |company|
-    = company.title
-    = company.name
-    = company.start_date
-    = company.end_date
-    = company.linkedin_company_url
-    = company.website
-    = company.industry
-    = company.type
-    = company.headquarters
-    = company.company_size
-    = company.founded
-    = company.address
-    = company.contact_id
-%p 
-  %b Current Companies
-  - @contact.companies.where(:current_company => true).each do |company|
-    = company.title
-    = company.name
-    = company.start_date
-    = company.end_date
-    = company.linkedin_company_url
-    = company.website
-    = company.industry
-    = company.type
-    = company.headquarters
-    = company.company_size
-    = company.founded
-    = company.address
-    = company.contact_id
-= link_to 'Edit', edit_contact_path(@contact)
-\|
-= link_to 'Back', contacts_path
+  %p 
+    - @contact.skills.each do |skill|
+      = skill.name
+  %p 
+    - @contact.educations.each do |education|
+      = education.name
+      = education.description
+      = education.period
+  %p 
+    - @contact.recommended_visitors.each do |recommended|
+      = recommended.linkedin_url
+      = recommended.name
+      = recommended.title
+      = recommended.company
+      = recommended.contact_id
+  %p 
+    %b Past Companies
+    - @contact.companies.where(:current_company => false).each do |company|
+      = company.title
+      = company.name
+      = company.start_date
+      = company.end_date
+      = company.linkedin_company_url
+      = company.website
+      = company.industry
+      = company.type
+      = company.headquarters
+      = company.company_size
+      = company.founded
+      = company.address
+      = company.contact_id
+  %p 
+    %b Current Companies
+    - @contact.companies.where(:current_company => true).each do |company|
+      = company.title
+      = company.name
+      = company.start_date
+      = company.end_date
+      = company.linkedin_company_url
+      = company.website
+      = company.industry
+      = company.type
+      = company.headquarters
+      = company.company_size
+      = company.founded
+      = company.address
+      = company.contact_id
+  = link_to 'Edit', edit_contact_path(@contact)
+  \|
+  = link_to 'Back', contacts_path
