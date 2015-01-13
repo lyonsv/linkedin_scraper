@@ -1,0 +1,6 @@
+$('#contacts').append('<%= j render(@contacts) %>');
+<% if @contacts.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate(@contacts) %>');
+<% else %>
+  $('.pagination').remove();
+<% end %>

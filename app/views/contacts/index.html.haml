@@ -1,26 +1,7 @@
 .contacts_container
   %header
     %h1 Listing contacts
-  - @contacts.each do |contact|
-    = link_to contact do
-      %section
-        = image_tag contact.picture_url
-        .description
-          %h3= contact.name
-          %h4= contact.headline
-          %p= contact.title
-          %p= contact.summary
-          %ul
-            - contact.skills.each do |skill|
-              %li
-                .tag
-                  = skill.name
-          %ul
-            %li= contact.location
-            %li= contact.country
-            %li= contact.industry
-        //.notes
-        // = contact.notes
+  #contacts
+    = render @contacts
   = will_paginate @contacts
-          
 
