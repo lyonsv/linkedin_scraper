@@ -5,7 +5,10 @@ class ContactsController < ApplicationController
 
   def index
     @contacts = Contact.all
-    respond_with(@contacts)
+    respond_to do |format|
+      format.html
+      format.csv { render text: @contacts.to_csv }
+    end
   end
 
   def show

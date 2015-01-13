@@ -11,6 +11,7 @@
     %p.tac{style: "margin-bottom:2em"}
       Made a new contact?
       = link_to 'New Contact', new_contact_path, class: "btn-mini btn-hollow btn-accent"
+      = link_to 'Export to CSV', contacts_path(format:"csv")
 
     %section.l-section.company-section
       
