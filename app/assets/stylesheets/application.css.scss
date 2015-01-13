@@ -67,10 +67,12 @@ body{
 
 .tag{
 display:inline-block;
-color:white;
+color:$dark-gray;
+background:#efefef;
 padding:0.3em 1em;
 font-size:0.8em;
 border-radius:2px;
+margin-top:2px;
 }
 
 .bar {
@@ -82,4 +84,37 @@ fieldset#resume{
 input[type=file]{
   color:transparent;
 }
+}
+
+.contacts_container{
+  @include pad(3em 2em);   
+  overflow:scroll;
+  text-align: left;
+  section{
+  @include outer-container;
+  @include pad(2em) 
+  }
+  h1{
+    padding-bottom:1em;
+    text-align:center;
+    font-weight:100;
+  }
+  img{
+    @include span-columns(1); 
+    max-width:100px;
+    border-radius:1000px;
+    box-shadow:2px 2px #efefef;
+  }
+  .description{
+    @include span-columns(11); 
+  }
+  .actions{
+    @include span-columns(2); 
+  }
+  ul{
+    font-size:0.8em;
+  }
+  a{
+  color:$base-font-color;
+  }
 }

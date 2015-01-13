@@ -1,5 +1,14 @@
-%h1 New contact
+%h1.p5 New contact
 
-= render 'form'
+.l-form.l-form-small
+  = simple_form_for(@contact) do |f|
+    = f.error_notification
 
-= link_to 'Back', contacts_path
+    .form-inputs
+      %fieldset
+        = f.input :linkedin_url
+        %p
+          %img{src: "../assets/images/arrow.png"}
+          %b Copy and paste a public linkedin URL here.
+    .form-actions
+      = f.button :submit, class: "btn-mini btn-solid btn-accent"

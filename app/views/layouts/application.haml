@@ -6,5 +6,12 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    %section.l-section.company-section.m5{style: "padding:5%"}
+    = link_to root_path do
+      %img{src: "../assets/images/black-logo.png", style: "max-width:250px;margin:3em auto; display: block;"}    
+    %p.tac{style: "margin-bottom:2em"}
+      Made a new contact?
+      = link_to 'New Contact', new_contact_path, class: "btn-mini btn-hollow btn-accent"
+
+    %section.l-section.company-section
+      
       = yield

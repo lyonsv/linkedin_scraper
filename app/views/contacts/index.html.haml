@@ -1,41 +1,25 @@
-%h1 Listing contacts
+.contacts_container
+  %header
+    %h1 Listing contacts
+  - @contacts.each do |contact|
+    = link_to contact do
+      %section
+        = image_tag contact.picture_url
+        .description
+          %h3= contact.name
+          %h4= contact.headline
+          %p= contact.title
+          %p= contact.summary
+          %ul
+            - contact.skills.each do |skill|
+              %li
+                .tag
+                  = skill.name
+          %ul
+            %li= contact.location
+            %li= contact.country
+            %li= contact.industry
+        //.notes
+        // = contact.notes
+          
 
-%table
-  %thead
-    %tr
-      %th Name
-      %th Notes
-      %th Headline
-      %th First name
-      %th Last name
-      %th Title
-      %th Summary
-      %th Location
-      %th Country
-      %th Industry
-      %th Picture url
-      %th
-      %th
-      %th
-      
-  %tbody
-    - @contacts.each do |contact|
-      %tr
-        %td= contact.name
-        %td= contact.notes
-        %td= contact.headline
-        %td= contact.first_name
-        %td= contact.last_name
-        %td= contact.title
-        %td= contact.summary
-        %td= contact.location
-        %td= contact.country
-        %td= contact.industry
-        %td= contact.picture_url
-        %td= link_to 'Show', contact
-        %td= link_to 'Edit', edit_contact_path(contact)
-        %td= link_to 'Destroy', contact, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Contact', new_contact_path
