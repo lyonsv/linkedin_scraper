@@ -130,16 +130,30 @@ input[type=file]{
 }
 
 .contact-profile{
-  @include pad(3em 2em);   
+  @include pad(3em 2em);
+  @include outer-container;  
   overflow:scroll;
   text-align: left;
   section{
-    @include outer-container;
-    @include pad(2em);
+  @include span-columns(6)
+  }
+  .profile-picture{
+    @include span-columns(3);  
   }
   img{
     max-width:150px;
     border-radius:1000px;
     box-shadow:2px 2px #efefef;
   }
+  ul{
+    font-size:0.8em;
+  }
+  .company{
+    @include pad(2em 0)
+  }
+  aside{
+    @include span-columns(3);   
+  padding:0  
+  }
 }
+
