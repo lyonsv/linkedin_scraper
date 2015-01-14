@@ -1,6 +1,12 @@
 .contact-profile
   .profile-picture
     = image_tag @contact.picture_url
+    %p
+      %b Location:
+      = @contact.location + ", " + @contact.country
+    %p
+      %b Industry:
+      = @contact.industry
   %section 
     %h1= @contact.name
     %b
@@ -12,66 +18,61 @@
           .tag
             = skill.name
     %p= @contact.summary
-    %p
-      %b Location:
-      = @contact.location
-    %p
-      %b Country:
-      = @contact.country
-    %p
-      %b Industry:
-      = @contact.industry
+    .l-card-border.p5.m5
+      - @contact.educations.each do |education|
+        %p
+          %b= education.name
+        %p= education.description
+        %p= education.period
+    .l-card-border.p5.m5
+      %p 
+        %b Current Companies
+        - @contact.companies.where(:current_company => true).each do |company|
+          .company
+            %p
+              %b= company.name
+              = company.start_date.strftime("%d %B, %Y") + " - " + company.end_date.strftime("%d %B, %Y")
+              
+            %p= company.title
+            .fa.fa-facebook
+            %p= link_to "Linkedin Profile", company.linkedin_company_url
+            %p= link_to company.website
+            %p= company.industry
+            %p= company.type
+            %p= company.headquarters
+            %p= company.company_size
+            %p= company.address
+    .l-card-border.p5.m5
+      %p 
+        %b Past Companies
+        - @contact.companies.where(:current_company => false).each do |company|
+          .company
+            %p
+              %b= company.name
+              = company.start_date.strftime("%d %B, %Y") + " - " + company.end_date.strftime("%d %B, %Y")
+              
+            %p= company.title
+            .fa.fa-facebook
+            %p= link_to "Linkedin Profile", company.linkedin_company_url
+            %p= link_to company.website
+            %p= company.industry
+            %p= company.type
+            %p= company.headquarters
+            %p= company.company_size
+            %p= company.address
 
-    - @contact.educations.each do |education|
-      %p
-        %b= education.name
-      %p= education.description
-      %p= education.period
-    %p 
-      %b Past Companies
-      - @contact.companies.where(:current_company => false).each do |company|
-        .company
-          %p
-            %b= company.name
-            = company.start_date.strftime("%d %B, %Y") + " - " + company.end_date.strftime("%d %B, %Y")
-            
-          %p= company.title
-          .fa.fa-facebook
-          %p.fa.fa-linkedin= link_to company.linkedin_company_url
-          %p= link_to company.website
-          %p= company.industry
-          %p= company.type
-          %p= company.headquarters
-          %p= company.company_size
-          %p= company.founded
-          %p= company.address
-    %p 
-      %b Current Companies
-      - @contact.companies.where(:current_company => true).each do |company|
-        = company.title
-        = company.name
-        = company.start_date
-        = company.end_date
-        = company.linkedin_company_url
-        = company.website
-        = company.industry
-        = company.type
-        = company.headquarters
-        = company.company_size
-        = company.founded
-        = company.address
-        = company.contact_id
   %aside
     %p
       %b Related Contacts
     - @contact.recommended_visitors.each do |recommended|
-      %p
-        %b= recommended.name
-      %p= recommended.company
-      %p= recommended.title
-      %p
-        %button.btn-hollow.btn-mini.btn-accent + Add Contact
-        = link_to "See Profile", recommended.linkedin_url
+      .panel.l-card-border.m5.p5
+        %p
+          %b= recommended.name
+        %p= recommended.company
+        %p= recommended.title
+        %p
+          %button.btn-hollow.btn-mini.btn-accent + Add Contact
+          = link_to "See Profile", recommended.linkedin_url
     = link_to 'Edit', edit_contact_path(@contact)
     \|
     = link_to 'Back', contacts_path

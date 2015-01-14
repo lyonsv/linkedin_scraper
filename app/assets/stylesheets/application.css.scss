@@ -135,10 +135,10 @@ input[type=file]{
   overflow:scroll;
   text-align: left;
   section{
-  @include span-columns(6)
+  @include span-columns(7)
   }
   .profile-picture{
-    @include span-columns(3);  
+    @include span-columns(2);  
   }
   img{
     max-width:150px;
