@@ -20,11 +20,17 @@
 #
 
 class Contact < ActiveRecord::Base
-  after_create :build_profile_from_linkedin_scraper
+  
   has_many :skills 
   has_many :educations 
   has_many :companies
   has_many :recommended_visitors
+
+  after_create :build_profile_from_linkedin_scraper
+   
+  #
+  # Contact Profiles are built by prompting the user to submit a profile url or username and running an after_create method. 
+  #
   
   def build_profile_from_linkedin_scraper  
     profile = Linkedin::Profile.get_profile(self.linkedin_url)
@@ -55,6 +61,14 @@ class Contact < ActiveRecord::Base
     end
     self.save
   end
+
+  def build_profile_from_github
+    client = Octokit::Client.new
+
+    user = client.user 'defunkt' 
+    raise user
+  end
+  
   def self.to_csv
     CSV.generate do |csv|
       csv << column_names

@@ -4,12 +4,12 @@
     %header
       %h1 Sign up
   %section.l-form
-    .signup-form-left
-      - if devise_mapping.omniauthable?
-        - resource_class.omniauth_providers.each do |provider|
-          = link_to omniauth_authorize_path(resource_name, provider), class: "btn-big btn-ln btn-solid" do
-            .fa.fa-linkedin
-            Sign Up with  #{provider.to_s.titleize}
+    //.signup-form-left
+      //- if devise_mapping.omniauthable?
+        //- resource_class.omniauth_providers.each do |provider|
+          //= link_to omniauth_authorize_path(resource_name, provider), class: "btn-big btn-ln btn-solid" do
+            //.fa.fa-linkedin
+            //Sign Up with  #{provider.to_s.titleize}
       %section
       %br/
       .blur      

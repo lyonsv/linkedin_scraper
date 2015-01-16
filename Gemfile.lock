@@ -104,12 +104,12 @@ GEM
       railties (>= 3.0.0)
     faker (1.4.3)
       i18n (~> 0.5)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.6)
     formatador (0.2.5)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
-    google-search (1.0.3)
-      json
     guard (2.11.1)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -138,7 +138,6 @@ GEM
       haml (>= 3.1, < 5.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
-    hashie (3.3.2)
     hike (1.2.3)
     hitimes (1.2.2)
     hpricot (0.8.6)
@@ -162,10 +161,6 @@ GEM
     kgio (2.9.3)
     launchy (2.4.3)
       addressable (~> 2.3)
-    linkedin (1.0.0)
-      hashie (~> 3.0)
-      multi_json (~> 1.0)
-      oauth (~> 0.4)
     linkedin-scraper (0.1.5)
       mechanize
     listen (2.8.5)
@@ -191,6 +186,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
+    multipart-post (2.0.0)
     neat (1.7.1)
       bourbon (>= 4.0)
       sass (>= 3.3)
@@ -203,15 +199,8 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     ntlm-http (0.1.1)
-    oauth (0.4.7)
-    omniauth (1.2.2)
-      hashie (>= 1.2, < 4)
-      rack (~> 1.0)
-    omniauth-linkedin (0.2.0)
-      omniauth-oauth (~> 1.0)
-    omniauth-oauth (1.0.1)
-      oauth
-      omniauth (~> 1.0)
+    octokit (3.7.0)
+      sawyer (~> 0.6.0, >= 0.5.3)
     orm_adapter (0.5.0)
     pg (0.18.1)
     polyamorous (1.1.0)
@@ -303,6 +292,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
+    sawyer (0.6.0)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
     selenium-webdriver (2.44.0)
       childprocess (~> 0.5)
       multi_json (~> 1.0)
@@ -381,7 +373,6 @@ DEPENDENCIES
   devise
   factory_girl_rails
   faker
-  google-search
   guard-bundler
   guard-rails
   guard-rspec
@@ -391,11 +382,9 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
-  linkedin
   linkedin-scraper
   neat
-  omniauth
-  omniauth-linkedin
+  octokit (~> 3.0)
   pg
   quiet_assets
   rails (= 4.2.0)

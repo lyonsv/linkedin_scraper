@@ -13,22 +13,25 @@ group :development, :test do
   gem 'spring'
 end
 gem 'roboto'
-gem 'linkedin'
 gem 'linkedin-scraper'
 gem 'devise'
 gem 'haml-rails'
 gem 'pg'
 gem 'sendgrid'
 gem 'simple_form'
-gem 'omniauth'
-gem 'omniauth-linkedin'
+
+# there's no need for linkedin sign up - the linkedni people search api requires a verified api key.
+# gem 'omniauth'
+# gem 'omniauth-linkedin'
+# gem 'linkedin'
+
 gem 'bourbon'
 gem 'neat'
 gem 'annotate'
 gem 'country_select'
 gem 'will_paginate'
 gem 'ransack'
-gem 'google-search'
+gem "octokit", "~> 3.0"
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
