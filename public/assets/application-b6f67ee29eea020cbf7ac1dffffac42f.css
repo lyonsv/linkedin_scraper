@@ -1,0 +1,3350 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 8, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 25, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 34, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 41, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 52, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 63, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 72, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 78, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 89, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 96, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 102, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 109, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 115, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 123, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 130, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 140, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 146, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 152, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 158, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 165, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 168, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded conten
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 177, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 183, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 192, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 201, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 210, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 221, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 236, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 246, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 257, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 269, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 277, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 289, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 301, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 308, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 317, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 329, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 333, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 339, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 347, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* Prevent callout */
+/* line 354, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.nocallout {
+  -webkit-touch-callout: none;
+}
+
+/* line 357, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.pressed {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+/* line 361, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+textarea[contenteditable] {
+  -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+/* line 366, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.gifhidden {
+  position: absolute;
+  left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+/* line 373, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.ir {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em;
+}
+
+/* line 383, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.ir br {
+  display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 389, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 396, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 410, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layou
+ */
+/* line 422, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+/* line 429, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 434, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* Base font styling */
+/* line 438, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* If something needs line height, I'll specify it. */
+/* line 448, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* I'll style my own blockquotes thank you very much! */
+/* line 452, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+blockquote {
+  margin: 0;
+}
+
+/* Sometimes I don't want small text to be small...
+that made perfect sense until I read it back. */
+/* line 457, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+small {
+  font-size: 100%;
+}
+
+/* Why would you want your address in italics? */
+/* line 461, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+address {
+  font-style: normal;
+}
+
+/* I'll style my own pre thank you very much! */
+/* line 465, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/_reset.scss */
+pre {
+  margin: 0;
+}
+
+/* line 4, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: whitesmoke;
+  color: #5f6a7d;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 17, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 2.25em;
+}
+
+/* line 21, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 25, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.75em;
+}
+
+/* line 29, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 33, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em;
+}
+
+/* line 37, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 41, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 45, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #53b2e5;
+  text-decoration: none;
+}
+/* line 50, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+a:hover {
+  color: #1f90cd;
+}
+/* line 54, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus {
+  color: #1f90cd;
+  outline: none;
+}
+
+/* line 60, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #f3ebeb;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0;
+}
+
+/* line 68, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 73, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #f3ebeb;
+  color: #8690a3;
+  margin: 1.5em 0;
+  padding-left: 0.75em;
+}
+
+/* line 80, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+cite {
+  color: #a3abb9;
+  font-style: italic;
+}
+/* line 84, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+cite:before {
+  content: '\2014 \00A0';
+}
+
+/* line 89, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_typography.scss */
+em {
+  color: #df4498;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  margin: 0 0 0.75em 0;
+}
+
+/* line 6, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* line 14, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em;
+}
+/* line 18, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+label.required:after {
+  content: "*";
+}
+/* line 22, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+label abbr {
+  display: none;
+}
+
+/* line 27, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  width: 100px;
+  border: 1px solid #f3ebeb;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.75em 0.5em;
+  width: 100%;
+}
+/* line 42, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+textarea:hover,
+input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+select[multiple=multiple]:hover {
+  border-color: #e0cbcb;
+}
+/* line 46, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+textarea:focus,
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+select[multiple=multiple]:focus {
+  border-color: #53b2e5;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(61, 168, 226, 0.7);
+  outline: none;
+}
+
+/* line 53, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* line 58, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 62, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 67, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+input[type="file"] {
+  margin-bottom: 0.75em;
+  padding-bottom: 0.5em;
+  width: 100%;
+}
+
+/* line 73, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_forms.scss */
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em;
+}
+
+/* line 3, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-mini, .btn-sml, .btn-big, .btn-huge {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -khtml-border-radius: 2px;
+  /** Prevent click and drag text selection **/
+  -webkit-user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /** Disable tap highlight on iOS **/
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 19, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-mini:hover, .btn-mini:focus, .btn-mini:active, .btn-sml:hover, .btn-sml:focus, .btn-sml:active, .btn-big:hover, .btn-big:focus, .btn-big:active, .btn-huge:hover, .btn-huge:focus, .btn-huge:active {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 23, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-mini {
+  font-size: 10px;
+  padding: 10px 14px;
+}
+
+/* line 27, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-sml {
+  font-size: 11px;
+  padding: 12px 17px;
+}
+
+/* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-big {
+  font-size: 12px;
+  padding: 17px 30px;
+}
+
+/* line 35, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-huge {
+  font-size: 13px;
+  padding: 23px 44px;
+}
+
+/* line 39, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-hollow {
+  background: none;
+  border: 2px solid;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 45, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-hollow.btn-accent {
+  border-color: #53b2e5;
+  color: #53b2e5;
+}
+
+/* line 48, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-hollow.btn-accent:hover, .btn-hollow.btn-accent:focus {
+  border-color: #69bce8;
+  color: #69bce8;
+}
+
+/* line 51, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-hollow.btn-complement {
+  border-color: white;
+  color: white;
+}
+
+/* line 54, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-hollow.btn-complement:hover, .btn-hollow.btn-complement:focus {
+  border-color: #f2f2f2;
+  color: #f2f2f2;
+}
+
+/* line 57, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-hollow.btn-base {
+  border-color: #f2f2f2;
+  color: #f2f2f2;
+}
+
+/* line 60, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-hollow.btn-base:hover, .btn-hollow.btn-base:focus {
+  border-color: #53b2e5;
+  color: #53b2e5;
+}
+
+/* line 63, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-hollow.btn-transparent {
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* line 68, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-hollow.btn-transparent:hover, .btn-hollow.btn-transparent:focus {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+/* line 72, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid {
+  border: 2px solid;
+}
+
+/* line 74, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid:active {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* line 79, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-accent {
+  background: #53b2e5;
+  border-color: #53b2e5;
+  color: #fff;
+}
+
+/* line 83, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-accent:hover, .btn-solid.btn-accent:focus {
+  background: #69bce8;
+  border-color: #69bce8;
+}
+
+/* line 86, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-accent:active {
+  background: #53b2e5;
+  border-color: #3da8e2;
+  border-bottom-color: #53b2e5;
+}
+
+/* line 90, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-complement {
+  background: white;
+  border-color: white;
+  color: #fff;
+}
+
+/* line 94, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-complement:hover, .btn-solid.btn-complement:focus {
+  background: #fcc552;
+  border-color: #fcc552;
+}
+
+/* line 97, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-complement:active {
+  background: white;
+  border-color: #fab520;
+  border-bottom-color: white;
+}
+
+/* line 101, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-base {
+  background: #f2f2f2;
+  border-color: #f2f2f2;
+  color: #fff;
+}
+
+/* line 105, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-base:hover, .btn-solid.btn-base:focus {
+  background: #3c404a;
+  border-color: #3c404a;
+}
+
+/* line 108, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-base:active {
+  background: #f2f2f2;
+  border-color: #26282e;
+  border-bottom-color: #f2f2f2;
+}
+
+/* line 112, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-transparent {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* line 118, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-solid.btn-transparent:hover, .btn-solid.btn-transparent:focus {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* line 121, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.accent .btn-solid.btn-subdue {
+  background: #76c2ea;
+  border-color: #76c2ea;
+  color: #fff;
+}
+
+/* line 125, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.accent .btn-solid.btn-subdue:hover, .accent .btn-solid.btn-subdue:focus {
+  background: #7fc6ec;
+  border-color: #7fc6ec;
+}
+
+/* line 128, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.accent .btn-solid.btn-subdue:active {
+  background: #76c2ea;
+  border-color: #5cb6e6;
+}
+
+/* line 131, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.accent .btn-hollow.btn-subdue {
+  background: none;
+  border-color: #acdaf2;
+  color: #c2e4f6;
+}
+
+/* line 135, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.accent .btn-hollow.btn-subdue:hover {
+  border-color: #d8eef9;
+  color: #eef7fc;
+}
+
+/* line 139, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.complement .btn-solid.btn-subdue {
+  background: white;
+  border-color: white;
+  color: white;
+}
+
+/* line 143, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.complement .btn-solid.btn-subdue:hover, .complement .btn-solid.btn-subdue:focus {
+  background: white;
+  border-color: white;
+}
+
+/* line 146, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.complement .btn-solid.btn-subdue:active {
+  background: white;
+  border-color: #fbc043;
+}
+
+/* line 149, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.complement .btn-hollow.btn-subdue {
+  background: none;
+  border-color: #fdde9d;
+  color: #fee7b6;
+}
+
+/* line 153, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.complement .btn-hollow.btn-subdue:hover {
+  border-color: #feefcf;
+  color: #fff7e8;
+}
+
+/* line 157, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.base .btn-solid.btn-subdue {
+  background: #434752;
+  border-color: #434752;
+  color: #fff;
+}
+
+/* line 161, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.base .btn-solid.btn-subdue:hover, .base .btn-solid.btn-subdue:focus {
+  background: #484c58;
+  border-color: #484c58;
+}
+
+/* line 164, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.base .btn-solid.btn-subdue:active {
+  background: #434752;
+  border-color: #363942;
+}
+
+/* line 167, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.base .btn-hollow.btn-subdue {
+  background: none;
+  border-color: #5f6574;
+  color: #6a7182;
+}
+
+/* line 171, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.base .btn-hollow.btn-subdue:hover {
+  border-color: #858b9b;
+  color: #858b9b;
+}
+
+/* line 175, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.neutral .btn-solid.btn-subdue {
+  background: white;
+  border-color: white;
+  color: #b3bdcc;
+}
+
+/* line 179, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.neutral .btn-solid.btn-subdue:hover, .neutral .btn-solid.btn-subdue:focus {
+  background: white;
+  border-color: white;
+}
+
+/* line 182, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.neutral .btn-solid.btn-subdue:active {
+  background: white;
+  border-color: #f6f7f9;
+}
+
+/* line 185, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.neutral .btn-hollow.btn-subdue {
+  background: none;
+  border-color: #a3b0c2;
+  color: #a3b0c2;
+}
+
+/* line 189, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.neutral .btn-hollow.btn-subdue:hover {
+  border-color: #7688a3;
+  color: #7688a3;
+}
+
+/* line 193, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.white .btn-solid.btn-subdue {
+  background: #bdc0c9;
+  border-color: #bdc0c9;
+  color: #858b9b;
+}
+
+/* line 197, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.white .btn-solid.btn-subdue:hover, .white .btn-solid.btn-subdue:focus {
+  background: #c2c5cd;
+  border-color: #c2c5cd;
+}
+
+/* line 200, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.white .btn-solid.btn-subdue:active {
+  background: #bdc0c9;
+  border-color: #afb3bd;
+  border-bottom-color: #bdc0c9;
+}
+
+/* line 204, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.white .btn-hollow.btn-subdue {
+  background: none;
+  border-color: #858b9b;
+  color: #858b9b;
+}
+
+/* line 208, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.white .btn-hollow.btn-subdue:hover {
+  border-color: #f2f2f2;
+  color: #f2f2f2;
+}
+
+/* line 212, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_buttons.scss */
+.btn-disabled, .btn-sml[disabled], .btn-big[disabled], .btn-huge[disabled] {
+  background: #e1e4e9 !important;
+  box-shadow: none !important;
+  border-color: #e1e4e9 !important;
+  text-shadow: none !important;
+  color: #b6bbc8 !important;
+  cursor: default;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-tw {
+  margin-top: 1em;
+  text-align: center;
+  width: 100%;
+  padding: 2em;
+  background: #55acee;
+  color: white;
+  -webkit-transition: ease 0.3s;
+}
+/* line 9, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-tw .fa-twitter {
+  font-size: 1.5em;
+  line-height: 0;
+  color: white;
+}
+
+/* line 17, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-fb {
+  text-align: center;
+  width: 49%;
+  padding: 2em;
+  background: #4c66a4;
+  color: white;
+  -webkit-transition: ease 0.3s;
+}
+/* line 24, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-fb .fa-facebook {
+  font-size: 1.5em;
+  line-height: 0;
+  color: white;
+}
+
+/* line 30, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-ln {
+  text-align: center;
+  width: 49%;
+  padding: 2em;
+  background: #0077b5;
+  color: white;
+  -webkit-transition: ease 0.3s;
+}
+/* line 37, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-ln .fa-linkedin {
+  font-size: 1.5em;
+  line-height: 0;
+  color: white;
+}
+
+/* line 44, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-ln:hover {
+  color: white;
+  -webkit-transform: scale(1.03);
+  -webkit-transition: ease 0.3s;
+}
+
+/* line 48, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-tw:hover {
+  color: white;
+  -webkit-transform: scale(1.03);
+  -webkit-transition: ease 0.3s;
+}
+
+/* line 53, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-fb:hover {
+  color: white;
+  -webkit-transform: scale(1.03);
+  -webkit-transition: ease 0.3s;
+}
+
+/* line 58, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-fb {
+  background: #4c66a4;
+}
+
+/* line 63, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-share-large {
+  width: 100%;
+}
+
+/* line 67, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_social-button.scss */
+.btn-share-short {
+  width: 49%;
+  margin-top: 2%;
+}
+
+/*
+ *  Remodal - v0.2.0
+ *  Flat, responsive, lightweight, easy customizable modal window plugin with declarative state notation and hash tracking.
+ *  http://vodkabears.github.io/remodal/
+ *
+ *  Made by Ilya Makarov
+ *  Under MIT License
+ */
+/* ==========================================================================
+   Remodal necessary styles
+   ========================================================================== */
+/* Hide scroll bar */
+/* line 16, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+html.remodal_lock, body.remodal_lock {
+  overflow: hidden;
+}
+
+/* Anti FOUC */
+/* line 22, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+.remodal, [data-remodal-id] {
+  visibility: hidden;
+}
+
+/* Overlay necessary styles */
+/* line 28, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+.remodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  display: none;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+}
+
+/* line 43, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+.remodal-overlay:after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  content: '';
+}
+
+/* Fix iPad, iPhone glitches */
+/* line 53, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+.remodal-overlay > * {
+  -webkit-transform: translateZ(0px);
+}
+
+/* Modal dialog necessary styles */
+/* line 59, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+.remodal {
+  position: relative;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   Remodal default theme
+   ========================================================================== */
+/* Background for effects */
+/* line 70, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+.remodal-bg {
+  -webkit-transition: -webkit-filter 0.2s linear;
+  -moz-transition: -moz-filter 0.2s linear;
+  -o-transition: -o-filter 0.2s linear;
+  transition: filter 0.2s linear;
+}
+
+/* line 77, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+body.remodal_active .remodal-bg {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+/* Overlay default theme styles */
+/* line 87, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+.remodal-overlay {
+  opacity: 0;
+  background: rgba(33, 36, 46, 0.95);
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+/* line 96, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+body.remodal_active .remodal-overlay {
+  opacity: 1;
+}
+
+/* Modal dialog default theme styles */
+/* line 102, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+.remodal {
+  width: 100%;
+  min-height: 100%;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  -moz-transition: -moz-transform 0.2s linear;
+  -o-transition: -o-transform 0.2s linear;
+  transition: transform 0.2s linear;
+}
+
+/* line 116, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+body.remodal_active .remodal {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* Modal dialog vertical align  */
+/* line 126, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+.remodal, .remodal-overlay:after {
+  vertical-align: middle;
+}
+
+/* Close button */
+/* Media queries
+   ========================================================================== */
+@media only screen and (min-width: 40.063em) {
+  /* line 136, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/base/_jquery.remodal.scss */
+  .remodal {
+    max-width: 700px;
+    margin: 20px auto;
+    min-height: 0;
+  }
+}
+/* line 6, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+button {
+  margin-top: 1em;
+}
+
+/* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-container {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.l-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 15, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-section {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  text-align: center;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.l-section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 21, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-card-border {
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+}
+
+/* line 27, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-border-bottom {
+  border-bottom: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+}
+
+/* line 34, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 40, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.fl {
+  float: left;
+}
+
+@media (min-width: 992px) {
+  /* line 44, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+  .fr {
+    float: right;
+    color: white;
+  }
+}
+
+/* line 50, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-header {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5em 0;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.l-header::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 56, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-header-bg header {
+  background: url("images/square-images/header-image-1.jpg"), center no-repeat;
+  background-size: cover;
+  padding: 5%;
+}
+/* line 60, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-header-bg header h1 {
+  font-size: 2.5em;
+  color: white;
+  text-transform: uppercase;
+}
+@media (max-width: 1120px) {
+  /* line 60, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+  .l-header-bg header h1 {
+    font-size: 2em;
+  }
+}
+/* line 68, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-header-bg header p {
+  color: white;
+}
+
+/* line 74, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-inner-container {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.l-inner-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 81, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-social-icons ul {
+  text-align: center;
+  margin: 0;
+}
+/* line 85, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-social-icons li {
+  display: inline;
+  font-size: 2em;
+  padding-right: 10px;
+}
+/* line 90, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-social-icons li:last-child {
+  padding-right: 0;
+}
+
+/* line 96, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.l-heading {
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* line 102, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.circle-logo img {
+  border-radius: 1000px;
+  background: rgba(255, 255, 255, 0.83);
+}
+
+/* line 108, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+#notice {
+  background: rgba(17, 137, 255, 0.1);
+  padding: 25px;
+  font-size: 1em;
+}
+
+/* line 114, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.error {
+  font-size: 1em;
+  color: #df4498;
+}
+
+/* line 119, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.p5 {
+  padding: 5%;
+}
+
+/* line 123, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.p5-top {
+  padding-top: 5%;
+}
+
+/* line 127, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.m10-top {
+  margin-top: 10%;
+}
+
+/* line 131, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.m5 {
+  margin-top: 5%;
+}
+
+/* line 135, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_layout.scss */
+.tac {
+  text-align: center;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-large {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.l-form-large::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 4, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-medium {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60em;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.l-form-medium::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 7, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-medium .short {
+  width: 27.78%;
+  display: inline-block;
+}
+/* line 11, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-medium .short-input {
+  display: inline-block;
+  width: 75%;
+}
+
+/* line 17, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-small {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.l-form-small::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 20, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-small .short {
+  width: 47.78%;
+  display: inline-block;
+}
+/* line 24, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-small .short-input {
+  display: inline-block;
+  width: 75%;
+}
+
+/* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-mini {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30em;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.l-form-mini::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 34, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-mini .short {
+  width: 27.78%;
+  display: inline-block;
+}
+/* line 38, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-mini .short-input {
+  display: inline-block;
+  width: 75%;
+}
+
+/* line 44, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-container {
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  background: white;
+}
+/* line 49, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form-container h1 {
+  text-align: center;
+}
+
+/* line 54, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form {
+  display: block;
+  padding: 5%;
+}
+/* line 58, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form i {
+  color: #53b2e5;
+  font-size: 2em;
+  width: 35px;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+}
+/* line 66, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/layout/_dubstarts-forms.scss */
+.l-form fieldset {
+  border: 1px solid rgba(124, 123, 123, 0.03);
+  padding: 1em;
+  text-align: left;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_white-section.scss */
+.white-section {
+  background: white;
+  color: #5f6a7d;
+}
+
+/* line 6, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_white-section.scss */
+.dark-section {
+  background: #3e4552;
+  color: white;
+}
+
+/* line 11, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_white-section.scss */
+.accent-section {
+  background: #df4498;
+  color: white;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+.dubstarts-hero {
+  padding: 0 5%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.99)), url("images/background.jpg"), center no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  color: white;
+}
+/* line 7, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+.dubstarts-hero img {
+  max-width: 300px;
+}
+/* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+.dubstarts-hero h1 {
+  font-size: 6em;
+  line-height: 1em;
+}
+@media (max-width: 1120px) {
+  /* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+  .dubstarts-hero h1 {
+    font-size: 4em;
+  }
+}
+@media (max-width: 680px) {
+  /* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+  .dubstarts-hero h1 {
+    font-size: 3em;
+  }
+}
+/* line 20, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+.dubstarts-hero h2 {
+  max-width: 750px;
+  font-size: 2em;
+}
+@media (max-width: 1120px) {
+  /* line 20, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+  .dubstarts-hero h2 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 680px) {
+  /* line 20, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+  .dubstarts-hero h2 {
+    font-size: 1em;
+  }
+}
+/* line 30, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+.dubstarts-hero h3 {
+  font-size: 1em;
+  line-height: 5em;
+}
+
+/* line 37, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+.landing-signup {
+  display: block;
+}
+/* line 39, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+.landing-signup p {
+  display: inline-block;
+}
+
+/* line 44, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+.sign-in {
+  padding: 2% 0;
+}
+/* line 46, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dubstarts-hero.scss */
+.sign-in a {
+  float: right;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+.about-dubstarts {
+  padding: 0;
+}
+/* line 3, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+.about-dubstarts img {
+  width: 25%;
+}
+@media (max-width: 1120px) {
+  /* line 3, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+  .about-dubstarts img {
+    margin: 5% auto;
+    display: block;
+  }
+}
+/* line 11, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+.about-dubstarts header h1 {
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+}
+@media (max-width: 1120px) {
+  /* line 11, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+  .about-dubstarts header h1 {
+    font-size: 2em;
+  }
+}
+/* line 20, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+.about-dubstarts .point div {
+  /* The vertical alignment magic */
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  /* Needs width for inline-block */
+  /* Fix for IE <= 7 */
+  *display: inline;
+  *zoom: 1;
+  *width: 16.6%;
+  padding: 0 5%;
+  max-width: 63%;
+  text-align: left;
+}
+@media (max-width: 1120px) {
+  /* line 20, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+  .about-dubstarts .point div {
+    padding: 0;
+    max-width: 100%;
+  }
+  /* line 28, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+  .about-dubstarts .point div p, .about-dubstarts .point div h3 {
+    text-align: center;
+  }
+  /* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+  .about-dubstarts .point div section {
+    background: #5f6a7d;
+    color: white;
+    padding: 5%;
+  }
+}
+@media (max-width: 1120px) {
+  /* line 38, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_about-dubstarts.scss */
+  .about-dubstarts .point {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.company-section {
+  padding: 0;
+  background: white;
+  margin-bottom: 5%;
+}
+/* line 4, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.company-section ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 2em;
+  text-align: center;
+}
+/* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.company-section li {
+  display: inline;
+}
+
+/* line 18, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.company-hero {
+  padding: 5% 1em;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.99)), url("../images/sea-background.jpg"), center no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+/* line 26, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.company-hero .circle-logo img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+/* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.company-hero button {
+  margin: 2% auto;
+}
+/* line 34, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.company-hero h1 {
+  margin: 2% auto;
+}
+
+/* line 39, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.company-description-body {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  padding: 2em;
+  text-align: left;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.company-description-body:last-child {
+  margin-right: 0;
+}
+@media (max-width: 680px) {
+  /* line 39, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+  .company-description-body {
+    width: 100%;
+  }
+}
+
+/* line 49, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-right: 0;
+  padding: 2em;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+aside:last-child {
+  margin-right: 0;
+}
+@media (max-width: 680px) {
+  /* line 49, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+  aside {
+    width: 100%;
+    padding-top: 0;
+  }
+  /* line 56, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+  aside .btn-big {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 64, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.company-description {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.company-description::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 68, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company.scss */
+.no_jobs {
+  text-align: center;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+nav {
+  background: rgba(13, 13, 13, 0.77);
+  position: absolute;
+  width: 100%;
+}
+/* line 5, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+nav img {
+  max-width: 200px;
+  margin-top: 13px;
+}
+/* line 9, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+nav ul {
+  display: inline-block;
+  text-align: right;
+  float: right;
+  list-style-type: none;
+}
+/* line 15, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+nav li {
+  display: inline;
+  padding: 15px;
+}
+/* line 19, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+nav li a {
+  color: white;
+}
+/* line 22, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+nav .back {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (max-width: 1120px) {
+  /* line 22, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+  nav .back {
+    display: none;
+  }
+}
+
+/* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+.mobile-menu-2 {
+  display: none;
+}
+@media (max-width: 1120px) {
+  /* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+  .mobile-menu-2 {
+    display: block;
+  }
+}
+
+@media (max-width: 1120px) {
+  /* line 38, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_navigation.scss */
+  .mobile-menu-1 {
+    display: none;
+  }
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.jobs-section {
+  padding: 5%;
+  text-align: left;
+}
+
+/* line 6, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.create-new-job {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: block;
+}
+/* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.create-new-job button {
+  float: right;
+  margin-bottom: 25px;
+}
+
+/* line 17, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.jobs-list-container {
+  display: block;
+}
+/* line 19, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.jobs-list-container section {
+  border-bottom: 1px #efe6e6 solid;
+  margin-bottom: 2%;
+  padding: 2%;
+}
+
+/* line 26, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.full {
+  height: 100% !important;
+}
+
+/* line 30, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.read-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+}
+/* line 36, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.read-more p {
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 43, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.border {
+  background-image: -webkit-linear-gradient(transparent, white);
+  background-image: linear-gradient(transparent, white);
+  width: 100%;
+  height: 50px;
+}
+
+/* line 50, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.or-share {
+  margin: 2em;
+}
+
+/* line 54, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.edit-buttons {
+  text-align: right;
+  display: inline-block;
+}
+@media (max-width: 680px) {
+  /* line 54, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+  .edit-buttons {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .edit-buttons:last-child {
+    margin-right: 0;
+  }
+  /* line 59, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+  .edit-buttons .btn-big {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 66, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.job-description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  overflow: hidden;
+  min-height: 300px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.job-description:last-child {
+  margin-right: 0;
+}
+@media (max-width: 680px) {
+  /* line 66, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+  .job-description {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .job-description:last-child {
+    margin-right: 0;
+  }
+}
+/* line 75, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.job-description .tag {
+  margin: 10px 0;
+}
+
+/* line 79, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.job-list-item {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.job-list-item::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 83, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+#panel {
+  height: 200px;
+}
+
+/* line 87, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.jobs-container-show {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: -123px;
+  max-width: 74.25em;
+  padding: 0 2em;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.jobs-container-show::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 93, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.jobs-container-show h3 {
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+/* line 99, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.left-jobs {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  text-align: left;
+  font-family: "Raleway";
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.left-jobs:last-child {
+  margin-right: 0;
+}
+
+/* line 105, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.right-jobs {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding: 5% 0;
+  text-align: left;
+  font-family: "Raleway";
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.right-jobs:last-child {
+  margin-right: 0;
+}
+
+/* line 114, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.circle-logo-jobs img {
+  width: 113px;
+  background: white;
+  border-radius: 1000px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 1px 2px rgba(129, 126, 126, 0.74);
+}
+
+/* line 125, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs.scss */
+.copy-to-clipboard input {
+  min-width: 100%;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.user_background {
+  background: url("images/background.jpg");
+  background-size: cover;
+}
+
+/* line 6, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.profile-header {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.96);
+  border: white 2px solid;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 2em;
+}
+/* line 14, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.profile-header .circle-logo {
+  display: inline-block;
+}
+/* line 18, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.profile-header .profile-description {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  padding: 1em;
+}
+/* line 24, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.profile-header h3 {
+  margin-bottom: 10px;
+}
+/* line 27, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.profile-header p {
+  margin: 0;
+}
+
+/* line 32, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.resume-section {
+  text-align: left;
+  background: white;
+}
+
+/* line 36, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.position {
+  padding: 1em 0;
+}
+
+/* line 39, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.date {
+  margin: 0;
+  font-style: italics;
+  color: #8b8b8b;
+}
+
+/* line 45, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_user.scss */
+.tags {
+  padding: 1em 0;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding: 2em;
+  text-align: center;
+  border-right: 1px solid;
+  border-color: rgba(128, 128, 128, 0.13);
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.signup-form-left:last-child {
+  margin-right: 0;
+}
+/* line 7, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-left .btn-ln {
+  width: 100%;
+  padding: 2em;
+}
+/* line 11, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-left section {
+  padding: 1em 0;
+  width: 90%;
+}
+/* line 14, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-left section p {
+  vertical-align: middle;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.signup-form-left section p:last-child {
+  margin-right: 0;
+}
+/* line 18, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-left section img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.signup-form-left section img:last-child {
+  margin-right: 0;
+}
+@media (max-width: 680px) {
+  /* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+  .signup-form-left {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .signup-form-left:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 33, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-right {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding: 2em;
+  display: block;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.signup-form-right:last-child {
+  margin-right: 0;
+}
+/* line 38, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-right .point {
+  padding-bottom: 20%;
+}
+/* line 40, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-right .point img {
+  width: 33%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 45, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-right .point p {
+  display: inline-block;
+  width: 65%;
+  vertical-align: middle;
+  text-align: left;
+}
+/* line 53, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.signup-form-right .rtl {
+  direction: rtl;
+}
+@media (max-width: 680px) {
+  /* line 33, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+  .signup-form-right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .signup-form-right:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 62, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.hint {
+  color: #df4498;
+}
+
+/* line 66, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.user-form-container {
+  padding: 0;
+  max-width: 60em;
+}
+/* line 69, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.user-form-container p {
+  margin: 2em 0;
+}
+/* line 72, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.user-form-container h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+/* line 77, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.user-form-container fieldset {
+  text-align: left;
+}
+
+/* line 82, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.toc {
+  font-size: 0.8em;
+}
+
+/* line 86, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.or {
+  margin: 2em;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* line 101, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_signup.scss */
+.startup-signup {
+  text-align: center;
+  padding: 2%;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+.companies-index-section {
+  text-align: center;
+}
+/* line 3, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+.companies-index-section h3, .companies-index-section p {
+  color: #5f6a7d;
+}
+
+/* line 7, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+.companies-list-container {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.companies-list-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media (max-width: 1120px) {
+  /* line 7, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+  .companies-list-container {
+    padding: 2%;
+  }
+}
+
+/* line 15, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+.company-list-item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.company-list-item:last-child {
+  margin-right: 0;
+}
+/* line 78, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_omega.scss */
+.company-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 83, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_omega.scss */
+.company-list-item:nth-child(3n+1) {
+  clear: left;
+}
+@media (max-width: 1120px) {
+  /* line 15, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+  .company-list-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .company-list-item:last-child {
+    margin-right: 0;
+  }
+  /* line 78, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_omega.scss */
+  .company-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  /* line 83, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_omega.scss */
+  .company-list-item:nth-child(2n+1) {
+    clear: left;
+  }
+}
+@media (max-width: 680px) {
+  /* line 15, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+  .company-list-item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .company-list-item:last-child {
+    margin-right: 0;
+  }
+  /* line 78, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_omega.scss */
+  .company-list-item:nth-child(0) {
+    margin-right: 0;
+  }
+}
+/* line 26, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+.company-list-item .images {
+  padding: 5%;
+}
+/* line 29, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+.company-list-item .description {
+  padding: 5%;
+}
+/* line 32, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+.company-list-item .tag {
+  margin: 5px 0;
+}
+/* line 36, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_company-index.scss */
+.company-list-item .btn-big {
+  margin-top: 20px;
+  display: block;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.grid-large {
+  min-width: 300px;
+}
+
+/* line 5, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.grid-medium {
+  min-width: 200px;
+}
+
+/* line 9, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.grid {
+  overflow: scroll;
+}
+
+/* line 13, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.grid-profile {
+  min-width: 80px;
+}
+/* line 15, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.grid-profile img {
+  border-radius: 1000px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* line 22, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.grid-container {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 96%;
+  background: #d8d6d6;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.grid-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.grid-filters {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  padding: 1em;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.grid-filters:last-child {
+  margin-right: 0;
+}
+@media (max-width: 1120px) {
+  /* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+  .grid-filters {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .grid-filters:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 680px) {
+  /* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+  .grid-filters {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .grid-filters:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 43, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.grid-body {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  background: white;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.grid-body:last-child {
+  margin-right: 0;
+}
+@media (max-width: 1120px) {
+  /* line 43, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+  .grid-body {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .grid-body:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 680px) {
+  /* line 43, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+  .grid-body {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .grid-body:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 56, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.dashboard-menu {
+  width: 100%;
+  height: 74px;
+  background: #949494;
+}
+/* line 60, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+.dashboard-menu button {
+  margin: 0;
+  margin: 10px;
+  float: right;
+}
+
+/* line 67, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dashboard.scss */
+table {
+  text-align: center;
+}
+
+/* line 2, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_slide_up_menu.scss */
+#bottom-bar {
+  background: white;
+  z-index: 100;
+}
+/* line 5, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_slide_up_menu.scss */
+#bottom-bar .fixed {
+  position: fixed;
+  top: 0px;
+}
+
+/* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_slide_up_menu.scss */
+.dn {
+  display: none;
+}
+
+/* line 12, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_slide_up_menu.scss */
+.bottom-fixed {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-list-container {
+  width: 100%;
+}
+/* line 2, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-list-container section {
+  padding: 2% 0;
+}
+/* line 5, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-list-container .l-form {
+  padding: 0;
+}
+/* line 6, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-list-container .l-form .btn-mini {
+  margin: 0 auto;
+  display: block;
+}
+/* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-list-container .l-form label {
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 15, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-list-container .l-form select {
+  margin: 23px auto;
+}
+/* line 21, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-list-container ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 25, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-list-container a {
+  color: #5f6a7d;
+}
+
+/* line 29, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.panel {
+  background: whitesmoke;
+}
+
+/* line 32, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.dubstarts-hero-background {
+  padding: 0 5%;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.99)), url("images/background.jpg"), center no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+/* line 38, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-index-section {
+  margin-top: -400px;
+  text-align: center;
+}
+/* line 41, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-index-section img {
+  max-width: 75px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 48, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-index-section header h1 {
+  font-weight: 100;
+  padding: 1em;
+}
+/* line 53, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-index-section h3 {
+  font-weight: 200;
+}
+/* line 56, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-index-section p {
+  margin: 0;
+}
+/* line 61, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-index-section .skills-tags p {
+  font-size: 0.75em;
+  display: inline-block;
+}
+
+/* line 69, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.jobs-aside:last-child {
+  margin-right: 0;
+}
+
+/* line 73, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  text-align: left;
+  border-bottom: none !important;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.jobs-content:last-child {
+  margin-right: 0;
+}
+
+/* line 79, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.companies-content {
+  width: 100%;
+  text-align: left;
+  border-bottom: none !important;
+}
+
+/* line 86, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.l-list-item-image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.l-list-item-image:last-child {
+  margin-right: 0;
+}
+
+/* line 90, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.l-list-item-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.l-list-item-content:last-child {
+  margin-right: 0;
+}
+
+/* line 94, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.l-list-item-container {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.l-list-item-container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 98, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.jobs-list-container section {
+  margin-bottom: 0;
+}
+
+/* line 101, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+a:nth-child(even) .l-list-item-container {
+  background: rgba(250, 249, 249, 0.1);
+}
+
+/* line 105, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_jobs-index.scss */
+.tac {
+  text-align: center;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal {
+  background: white;
+  text-align: center;
+  padding: 2em;
+}
+/* line 10, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal input {
+  margin: 2% 2%;
+  width: 200px;
+}
+/* line 14, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal footer {
+  height: 100%;
+  background: white;
+}
+/* line 18, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal ol {
+  display: inline-block;
+}
+/* line 22, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal button {
+  display: block;
+  color: white;
+  border: 1px solid white;
+}
+/* line 27, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal i {
+  font-size: 2em;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 0.5em;
+}
+/* line 33, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal ul {
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 0;
+}
+/* line 38, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal li {
+  list-style-type: none;
+  display: inline;
+  font-size: 1em;
+}
+/* line 43, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal .l-header {
+  padding: 1em 0;
+}
+/* line 47, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal .l-section {
+  margin-top: 0;
+}
+/* line 50, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.modal p {
+  display: block;
+  line-height: 1.5em;
+}
+
+/* line 57, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.remodal-close {
+  display: none;
+}
+
+/* line 61, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_modal.scss */
+.remodal {
+  background: white;
+}
+
+/* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.previous-companies {
+  text-align: center;
+  padding-top: 5%;
+}
+/* line 4, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.previous-companies h5 {
+  padding-bottom: 5%;
+}
+
+/* Container DIV - automatically generated */
+/* line 12, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.simply-scroll-container {
+  position: relative;
+}
+
+/* Clip DIV - automatically generated */
+/* line 17, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.simply-scroll-clip {
+  position: relative;
+  overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+/* line 24, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.simply-scroll-list {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 31, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.simply-scroll-list li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 37, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.simply-scroll-list li img {
+  border: none;
+  display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+/* Container DIV */
+/* line 47, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.simply-scroll {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1em;
+}
+
+/* Clip DIV */
+/* line 54, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.simply-scroll .simply-scroll-clip {
+  width: 100%;
+  height: 200px;
+}
+
+/* Explicitly set height/width of each list item */
+/* line 60, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_scroller.scss */
+.simply-scroll .simply-scroll-list li {
+  float: left;
+  /* Horizontal scroll only */
+  width: 200px;
+  height: 200px;
+}
+
+/* line 2, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.dropdown {
+  text-align: right;
+  display: inline-block;
+}
+
+/* line 7, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 13, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.dropdown-button {
+  cursor: pointer;
+}
+
+/* line 21, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.menu {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.1875em;
+  border: 1px solid silver;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  color: #5f6a7d;
+  cursor: pointer;
+  display: none;
+  overflow: show;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  z-index: 99999;
+  padding: 0;
+}
+/* line 36, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.menu:before {
+  position: absolute;
+  top: 0;
+  right: 1em;
+  bottom: 0;
+  left: 0;
+  color: white;
+  content: "\25b2";
+  font-size: 1.4em;
+  pointer-events: none;
+  text-shadow: 0 -2px 2px rgba(0, 0, 0, 0.3);
+  top: -1em;
+}
+
+/* line 47, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.menu li {
+  color: #5f6a7d;
+  padding: 0.5em;
+}
+
+/* line 54, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.menu li:first-child {
+  border-top-left-radius: 0.1875em;
+  border-top-right-radius: 0.1875em;
+}
+
+/* line 59, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.menu li:last-child {
+  border: none;
+  border-bottom-left-radius: 0.1875em;
+  border-bottom-right-radius: 0.1875em;
+}
+
+/* line 65, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.show-menu {
+  text-align: center;
+  display: block;
+  background: white;
+  min-width: 150px;
+}
+/* line 69, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_dropdown.scss */
+.show-menu ul {
+  padding: 0;
+}
+
+@media screen and (max-width: 1px) {
+  /* line 1, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+  .accordion-tabs {
+    border: 1px solid #f3ebeb;
+    border-radius: 0.1875em;
+  }
+}
+@media screen and (min-width: 1px) {
+  /* line 16, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+  .accordion-tabs .tab-header-and-content {
+    display: inline;
+  }
+}
+/* line 21, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+.accordion-tabs .tab-header-and-content:first-child .tab-link {
+  border-top-left-radius: 0.1875em;
+  border-top-right-radius: 0.1875em;
+}
+@media screen and (max-width: 1px) {
+  /* line 21, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+  .accordion-tabs .tab-header-and-content:first-child .tab-link {
+    border-top: 0;
+  }
+}
+@media screen and (max-width: 1px) {
+  /* line 30, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+  .accordion-tabs .tab-header-and-content:last-child .tab-link {
+    border-bottom-left-radius: 0.1875em;
+    border-bottom-right-radius: 0.1875em;
+  }
+}
+/* line 38, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+.accordion-tabs .tab-link {
+  background-color: whitesmoke;
+  border-top: 1px solid #f3ebeb;
+  color: #5f6a7d;
+  display: block;
+  font-weight: bold;
+  padding: 1em;
+}
+@media screen and (min-width: 1px) {
+  /* line 38, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+  .accordion-tabs .tab-link {
+    display: inline-block;
+    border-top-left-radius: 0.1875em;
+    border-top-right-radius: 0.1875em;
+    border-top: 0;
+  }
+}
+/* line 52, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+.accordion-tabs .tab-link:hover {
+  color: #53b2e5;
+}
+/* line 56, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+.accordion-tabs .tab-link:focus {
+  outline: none;
+}
+/* line 60, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+.accordion-tabs .tab-link.is-active {
+  background-color: white;
+}
+@media screen and (min-width: 1px) {
+  /* line 60, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+  .accordion-tabs .tab-link.is-active {
+    background-color: white;
+    border: 1px solid #f3ebeb;
+    border-bottom-color: white;
+    margin-bottom: -1px;
+  }
+}
+/* line 72, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+.accordion-tabs .tab-content {
+  background: white;
+  display: none;
+}
+@media screen and (min-width: 1px) {
+  /* line 72, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/partials/_tabs-refills.scss */
+  .accordion-tabs .tab-content {
+    border-top: 1px solid #f3ebeb;
+    float: left;
+  }
+}
+
+/* line 64, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+body {
+  padding-bottom: 5em;
+}
+
+/* line 68, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.tag {
+  display: inline-block;
+  color: #5f6a7d;
+  background: #efefef;
+  padding: 0.3em 1em;
+  font-size: 0.8em;
+  border-radius: 2px;
+  margin-top: 2px;
+}
+
+/* line 78, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.bar {
+  height: 18px;
+  background: #53b2e5;
+}
+
+/* line 84, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+fieldset#resume input[type=file] {
+  color: transparent;
+}
+
+/* line 89, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container {
+  padding: 3em 1em;
+  overflow: scroll;
+  text-align: left;
+}
+/* line 93, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container section {
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.contacts_container section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 96, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container .l-form {
+  padding: 0;
+  margin: 0;
+}
+/* line 100, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container h1 {
+  padding-bottom: 1em;
+  text-align: center;
+  font-weight: 100;
+}
+/* line 105, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container #contacts {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.contacts_container #contacts:last-child {
+  margin-right: 0;
+}
+/* line 108, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding-top: 0;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.contacts_container aside:last-child {
+  margin-right: 0;
+}
+/* line 112, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  max-width: 100px;
+  border-radius: 1000px;
+  box-shadow: 2px 2px #efefef;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.contacts_container img:last-child {
+  margin-right: 0;
+}
+/* line 118, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container .description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.contacts_container .description:last-child {
+  margin-right: 0;
+}
+/* line 121, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container .actions {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.contacts_container .actions:last-child {
+  margin-right: 0;
+}
+/* line 124, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container ul {
+  font-size: 0.8em;
+}
+/* line 127, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contacts_container a {
+  color: #5f6a7d;
+}
+
+/* line 132, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contact-profile {
+  padding: 3em 2em;
+  max-width: 74.25em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  text-align: left;
+}
+/* line 9, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/bourbon-4.1.0/app/assets/stylesheets/addons/_clearfix.scss */
+.contact-profile::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 137, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contact-profile section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.contact-profile section:last-child {
+  margin-right: 0;
+}
+/* line 140, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contact-profile .profile-picture {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.contact-profile .profile-picture:last-child {
+  margin-right: 0;
+}
+/* line 143, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contact-profile img {
+  max-width: 150px;
+  border-radius: 1000px;
+  box-shadow: 2px 2px #efefef;
+}
+/* line 148, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contact-profile ul {
+  font-size: 0.8em;
+}
+/* line 151, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contact-profile .company {
+  padding: 2em 0;
+}
+/* line 154, /Users/vincentlyons/git/dubstarts/linkedin_scraper/app/assets/stylesheets/application.css.scss */
+.contact-profile aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  padding: 0;
+}
+/* line 87, /Users/vincentlyons/.rvm/gems/ruby-2.1.2@linkedin_scraper/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+.contact-profile aside:last-child {
+  margin-right: 0;
+}
