@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150116172000) do
+ActiveRecord::Schema.define(version: 20150116182305) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,10 +49,33 @@ ActiveRecord::Schema.define(version: 20150116172000) do
     t.string   "country"
     t.string   "industry"
     t.string   "picture_url"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
     t.string   "linkedin_url"
     t.string   "github_username"
+    t.string   "github_avatar_url"
+    t.string   "github_url"
+    t.string   "github_html_url"
+    t.string   "github_followers_url"
+    t.string   "github_following_url"
+    t.string   "gists_url"
+    t.string   "starred_url"
+    t.string   "subscriptions_url"
+    t.string   "organizations_url"
+    t.string   "repos_url"
+    t.string   "events_url"
+    t.string   "received_events_url"
+    t.string   "github_name"
+    t.string   "github_company"
+    t.string   "github_blog"
+    t.string   "github_location"
+    t.string   "github_email"
+    t.boolean  "github_hireable"
+    t.string   "github_bio"
+    t.integer  "number_of_repos"
+    t.integer  "number_of_gists"
+    t.integer  "github_followers"
+    t.integer  "github_following"
   end
 
   create_table "educations", force: :cascade do |t|

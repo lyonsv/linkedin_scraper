@@ -4,6 +4,7 @@ class ContactsController < ApplicationController
   respond_to :html
 
   def index
+    @contact = Contact.new    
     @contacts_search = Contact.search(params[:q])
     @contacts = @contacts_search.result.includes(:skills, :educations, :companies).paginate(:page => params[:page], :per_page => 10).order(created_at: :desc)
     respond_to do |format|
@@ -20,7 +21,6 @@ class ContactsController < ApplicationController
 
   def new
     @contact = Contact.new
-    respond_with(@contact)
   end
 
   def edit
@@ -29,7 +29,12 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     flash[:notice] = 'Contact was successfully created.' if @contact.save
-    respond_with(@contact)
+     if @contact.save
+    flash[:notice] = "Successfully created contact."
+    redirect_to contacts_url
+  else
+    render :action => 'index'
+  end 
   end
 
   def update
@@ -48,6 +53,6 @@ class ContactsController < ApplicationController
     end
 
     def contact_params
-      params.require(:contact).permit(:linkedin_url, :name, :notes, :headline, :first_name, :last_name, :title, :summary, :location, :country, :industry, :picture_url)
+      params.require(:contact).permit(:github_username,:linkedin_url, :name, :notes, :headline, :first_name, :last_name, :title, :summary, :location, :country, :industry, :picture_url)
     end
 end

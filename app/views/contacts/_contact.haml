@@ -2,6 +2,7 @@
   %section
     = image_tag contact.picture_url
     .description
+      %p= time_ago_in_words(contact.created_at)
       %h3= contact.name
       %h4= contact.headline
       %p= contact.title

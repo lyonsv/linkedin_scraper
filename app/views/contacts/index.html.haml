@@ -15,8 +15,7 @@
           = f.search_field :educations_name_cont
           
           = f.submit "Search", class: "btn-mini btn-accent btn-solid"
-          
-  #contacts
+  %section#contacts
     = render @contacts
 = will_paginate @contacts
 

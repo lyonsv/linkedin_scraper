@@ -10,5 +10,12 @@
         %p
           %img{src: "../assets/images/arrow.png"}
           %b Copy and paste a public linkedin URL here.
+
+      %fieldset
+        = f.input :github_username, placeholder: "example-user"
+        %p
+          %img{src: "../assets/images/arrow.png"}
+          %b Copy and paste a Github User name here.  
+
     .form-actions
       = f.button :submit, class: "btn-mini btn-solid btn-accent"

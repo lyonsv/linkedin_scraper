@@ -7,12 +7,23 @@
     = csrf_meta_tags
   %body
     = link_to root_path do
-      %img{src: "../assets/images/black-logo.png", style: "max-width:250px;margin:3em auto; display: block;"}    
-    %p.tac{style: "margin-bottom:2em"}
-      Made a new contact?
-      = link_to 'New Contact', new_contact_path, class: "btn-mini btn-hollow btn-accent"
-      = link_to 'Export to CSV', contacts_path(format:"csv")
+      %img{src: "../assets/images/black-logo.png", style: "max-width:250px;margin:3em auto 0 auto; display: block;"}    
+    %section.l-section
+      .l-form.white-section{style: "padding:0"}
+        = simple_form_for(@contact) do |f|
+          = f.error_notification
+
+          .form-inputs
+            %fieldset
+              .div{style: "display:block;margin:0 auto;"}
+                = f.input :linkedin_url, placeholder: "http://linkedin.com/in/examplename"
+                %p{style:"display:inline-block"}
+                  %img{src: "../assets/images/arrow.png", style: "width:25px;"}
+                  Copy and paste a public linkedin URL here.
+
+                .form-actions
+                  = f.button :submit, class: "btn-mini btn-solid btn-accent"
 
     %section.l-section.company-section
-      
+      = link_to 'Export all contacts to CSV', contacts_path(format:"csv"), class: " btn-mini btn-accent btn-hollow m5"       
       = yield

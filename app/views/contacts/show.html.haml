@@ -3,7 +3,8 @@
     = image_tag @contact.picture_url
     %p
       %b Location:
-      = @contact.location + ", " + @contact.country
+      = @contact.location 
+      =  @contact.country
     %p
       %b Industry:
       = @contact.industry
@@ -18,6 +19,7 @@
           .tag
             = skill.name
     %p= @contact.summary
+  
     .l-card-border.p5.m5
       - @contact.educations.each do |education|
         %p
@@ -31,7 +33,8 @@
           .company
             %p
               %b= company.name
-              = company.start_date.strftime("%d %B, %Y") + " - " + company.end_date.strftime("%d %B, %Y")
+              = company.start_date.strftime("%d %B, %Y") + " - "
+              = company_date_format company.end_date
               
             %p= company.title
             .fa.fa-facebook
@@ -49,7 +52,8 @@
           .company
             %p
               %b= company.name
-              = company.start_date.strftime("%d %B, %Y") + " - " + company.end_date.strftime("%d %B, %Y")
+              = company.start_date.strftime("%d %B, %Y") + " - "
+              = company_date_format company.end_date
               
             %p= company.title
             .fa.fa-facebook
@@ -71,7 +75,7 @@
         %p= recommended.company
         %p= recommended.title
         %p
-          %button.btn-hollow.btn-mini.btn-accent + Add Contact
+          = link_to " + Add Contact", {controller: "contacts", action: "create", contact: {linkedin_url: recommended.linkedin_url}}, method: "post", class: "btn-hollow btn-mini btn-accent"
           = link_to "See Profile", recommended.linkedin_url
     = link_to 'Edit', edit_contact_path(@contact)
     \|
