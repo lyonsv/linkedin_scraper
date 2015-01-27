@@ -18,7 +18,7 @@ Bundler.require(*Rails.groups)
 
 module LinkedinScraper
   class Application < Rails::Application
-
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
     config.generators do |g|
       g.test_framework :rspec,
         fixtures: true,

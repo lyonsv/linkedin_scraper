@@ -19,8 +19,10 @@
                 = f.input :linkedin_url, placeholder: "http://linkedin.com/in/examplename"
                 %p{style:"display:inline-block"}
                   %img{src: "../assets/images/arrow.png", style: "width:25px;"}
-                  Copy and paste a public linkedin URL here.
-
+                Copy and paste a public linkedin URL here.
+                %br
+                = f.label :tag_list_tokens, "Tags (separated by commas)"
+                = f.text_field :tag_list_tokens, data: {load: @contact_tags}
                 .form-actions
                   = f.button :submit, class: "btn-mini btn-solid btn-accent"
 

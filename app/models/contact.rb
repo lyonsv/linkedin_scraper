@@ -50,10 +50,15 @@ class Contact < ActiveRecord::Base
   has_many :companies, dependent: :destroy
   has_many :recommended_visitors, dependent: :destroy
   acts_as_taggable
-  
+  attr_reader :tag_list_tokens 
   after_create :build_profile_from_linkedin_scraper, if: :user_has_linkedin_profile?
   after_create :build_profile_from_github, if: :user_has_github_profile?
-   
+  
+  def tag_list_tokens=(tokens)
+    self.tag_list = tokens.gsub("'", "")
+  end
+
+
   #
   # Contact Profiles are built by prompting the user to submit a profile url or username and running an after_create method. 
   #

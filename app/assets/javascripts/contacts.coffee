@@ -6,3 +6,5 @@ jQuery ->
         $('.pagination').text("Fetching more contacts...")
         $.getScript(url)
     $(window).scroll()
+
+

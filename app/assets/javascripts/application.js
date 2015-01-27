@@ -11,6 +11,19 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.tokeninput
 //= require_tree .
+
+jQuery(function() {
+  return $('#contact_tag_list_tokens').tokenInput('/contacts/tags.json', {
+    theme: 'mac',
+    minChars: 2,
+    allowCustomEntry: true,
+    preventDuplicates: true,
+    prePopulate: $('#contact_tag_list_tokens').data('load')
+  });
+});
+
