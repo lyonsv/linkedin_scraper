@@ -32,6 +32,7 @@ gem 'country_select'
 gem 'will_paginate'
 gem 'ransack'
 gem "octokit", "~> 3.0"
+gem 'acts-as-taggable-on'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

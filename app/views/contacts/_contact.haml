@@ -6,7 +6,7 @@
       %h3= contact.name
       %h4= contact.headline
       %p= contact.title
-      %p= contact.summary
+      %p= simple_format(contact.summary)
       %ul
         - contact.skills.each do |skill|
           %li

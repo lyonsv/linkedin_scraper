@@ -49,7 +49,8 @@ class Contact < ActiveRecord::Base
   has_many :educations, dependent: :destroy 
   has_many :companies, dependent: :destroy
   has_many :recommended_visitors, dependent: :destroy
-
+  acts_as_taggable
+  
   after_create :build_profile_from_linkedin_scraper, if: :user_has_linkedin_profile?
   after_create :build_profile_from_github, if: :user_has_github_profile?
    

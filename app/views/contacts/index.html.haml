@@ -1,6 +1,9 @@
 .contacts_container
   %header
-    %h1 Listing contacts
+    %h1 
+      Listing  
+      %em= Contact.all.count
+      Contacts
   %aside
     .l-form
       = search_form_for @contacts_search do |f|

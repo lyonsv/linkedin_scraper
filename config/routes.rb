@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'people_search/search'
-  
+  get 'tags/:tag', to: 'contacts#index', as: :tag 
   resources :educations
   resources :contacts
   root to: 'contacts#index'  
