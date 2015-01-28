@@ -1,22 +1,25 @@
-%section
-  = image_tag contact.picture_url
-  .description
-    %p= time_ago_in_words(contact.created_at)
-    %h3= contact.name
-    %h4= contact.headline
-    %p= contact.title
-    %p= simple_format(contact.summary)
-    %p 
-      Tags:
-      = raw contact.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
-    %ul
-      - contact.skills.each do |skill|
-        %li
-          .tag
-            = skill.name
-    %ul
-      %li= contact.location
-      %li= contact.country
-      %li= contact.industry
-  //.notes
-  // = contact.notes
+= link_to contact do
+  %section
+    = image_tag contact.picture_url
+    .description
+      %p= time_ago_in_words(contact.created_at)
+      %h3= contact.name
+      %h4= contact.headline
+      %p= contact.title
+      %p= simple_format(contact.summary)
+      %ul
+        - contact.skills.each do |skill|
+          %li
+            .tag
+              = skill.name
+      %ul
+        %li= contact.location
+        %li= contact.country
+        %li= contact.industry
+    //.notes
+    // = contact.notes
+%p 
+  Tags:
+  = raw contact.tag_list.map { |t| link_to t, tag_path(t) }.join(', ')
+= link_to "Delete Contact", contact, remote: true, :method => :delete,  style: "color:blue", class: "tar"
+
