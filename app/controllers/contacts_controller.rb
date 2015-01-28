@@ -59,6 +59,18 @@ class ContactsController < ApplicationController
     end
   end
 
+  def create_connections_from_linkedin
+    client = LinkedIn::Client.new
+    client.authorize_from_access(current_user.linkedin_token, current_user.linkedin_secret)
+    client.connections.all.each do |connection|
+      unless connection.id == "private" 
+        @contact = Contact.create(linkedin_api_url: connection.api_standard_profile_request.url, first_name: connection.first_name, headline: connection.headline, linkedin_id: connection.id, industry: connection.industry, last_name: connection.last_name, location: connection.location.name, picture_url: connection.picture_url, site_standard_profile_request_url: connection.site_standard_profile_request.url) 
+        @contact.save
+      end
+    end
+    redirect_to :root
+  end
+
   private
     def set_contact
       @contact = Contact.find(params[:id])
@@ -71,4 +83,5 @@ class ContactsController < ApplicationController
     def find_tags
       @contact_tags = params[:id].present? ? Contact.find(params[:id]).tags.token_input_tags : []
     end
+
 end

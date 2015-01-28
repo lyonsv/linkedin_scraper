@@ -21,10 +21,10 @@ gem 'pg'
 gem 'sendgrid'
 gem 'simple_form'
 
-# there's no need for linkedin sign up - the linkedni people search api requires a verified api key.
-# gem 'omniauth'
-# gem 'omniauth-linkedin'
-# gem 'linkedin'
+# adding linkedin API again, looking to keep my own conenctions saved in the database 
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem 'linkedin'
 
 gem 'bourbon'
 gem 'neat'

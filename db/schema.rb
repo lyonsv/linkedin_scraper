@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150119223620) do
+ActiveRecord::Schema.define(version: 20150128124737) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,8 +49,8 @@ ActiveRecord::Schema.define(version: 20150119223620) do
     t.string   "country"
     t.string   "industry"
     t.string   "picture_url"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
     t.string   "linkedin_url"
     t.string   "github_username"
     t.string   "github_avatar_url"
@@ -76,6 +76,9 @@ ActiveRecord::Schema.define(version: 20150119223620) do
     t.integer  "number_of_gists"
     t.integer  "github_followers"
     t.integer  "github_following"
+    t.string   "linkedin_api_url"
+    t.string   "linkedin_id"
+    t.string   "site_standard_profile_request_url"
   end
 
   create_table "educations", force: :cascade do |t|

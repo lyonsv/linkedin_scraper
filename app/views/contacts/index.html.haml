@@ -1,24 +1,28 @@
-.contacts_container
-  %header
-    %h1 
-      Listing  
-      %em= Contact.all.count
-      Contacts
-  %aside
-    .l-form
-      = search_form_for @contacts_search do |f|
-        %fieldset
-          %label Search by Name
-          = f.search_field :name_cont
-          %label Search by Skill      
-          = f.search_field :skills_name_cont
-          %label Search by Company              
-          = f.search_field :companies_name_cont
-          %label Search by Education                     
-          = f.search_field :educations_name_cont
-          
-          = f.submit "Search", class: "btn-mini btn-accent btn-solid"
-  %section#contacts
-    = render @contacts
-= will_paginate @contacts
+= render "layouts/new_contact_form"
+
+%section.l-section.company-section
+  = render "layouts/export_to_csv"
+  .contacts_container
+    %header
+      %h1 
+        Listing  
+        %em= Contact.all.count
+        Contacts
+    %aside
+      .l-form
+        = search_form_for @contacts_search do |f|
+          %fieldset
+            %label Search by Name
+            = f.search_field :name_cont
+            %label Search by Skill      
+            = f.search_field :skills_name_cont
+            %label Search by Company              
+            = f.search_field :companies_name_cont
+            %label Search by Education                     
+            = f.search_field :educations_name_cont
+            
+            = f.submit "Search", class: "btn-mini btn-accent btn-solid"
+    %section#contacts
+      = render @contacts
+  = will_paginate @contacts
 
